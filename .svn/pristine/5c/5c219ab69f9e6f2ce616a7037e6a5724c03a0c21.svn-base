@@ -1,0 +1,253 @@
+/****************************************************************************************
+ * File Name    : AuthConst.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  :
+ * Modification Log
+ * ======================================================================================
+ * Ver  Date        Author     Modification
+ * ======================================================================================
+   1.0  2018.05.16  최명호    Create
+****************************************************************************************/
+package org.snubi.auth;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
+import org.snubi.lib.code.CodeUtil;
+import org.snubi.lib.response.SnubiResponseCode;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import lombok.extern.slf4j.Slf4j;
+
+@Component
+@Getter
+@Setter
+@ToString
+@Slf4j
+public class AuthConst {
+
+	public static Map<String,SnubiResponseCode> mapSnubiResponseCode;
+	public static Long longExpireMilliSecond				;
+	public static String strSecrete							;
+	public static String strRequestID						;
+	public static String strRequestEmail					;
+	public static String strRequestPassword					;
+	public static String strRequestDeviceId					;
+	public static String strRequestOsCode					;
+	public static String strRequestSystemCode				;
+	public static String strResponseAuthHeader				;
+	public static String strResponseAuthToken				;
+	public static String strResponseAuthClaimSub			;
+	public static String strResponseAuthClaimExt			;
+	public static String strResponseAuthClaimName			;
+	public static String strResponseAuthClaimId				;
+	public static String strResponseAuthClaimOrganization	;
+	public static String strResponseAuthClaimDepartment		;
+	public static String strResponseAuthClaimTitle			;
+	public static String strResponseAuthClaimIssue			;
+	public static String strResponseAuthClaimDeviceID		;
+	public static String strPacketResponseCode				;
+	public static String strPacketCodeName					;
+	public static String strPacketTokenName					;
+	public static String strPacketMessageName				;
+	public static String strPacketErrorCodeVals				;
+	public static String strPacketErrorMessageVals			;
+	public static String strPacketSuccessCodeVals			;
+	public static String strPacketSuccessMessageVals		;
+	public static String strTokenPrefix						;
+	public static String strCodeServiceUrl 					;
+	public static String strAES256Key 						;
+
+	public static String DBMS;
+	@Value("${spring.jpa.database}")
+	public void setFlagDebug(String prop) {
+		AuthConst.DBMS = prop;
+	}
+	public static boolean flagDebug;
+	@Value("${auth.log.debug}")
+	public void setFlagDebug(boolean prop) {
+		AuthConst.flagDebug = prop;
+	}
+	public static boolean flagRunPrivate;
+	@Value("${auth.run.private}")
+	public void setFlagRunPrivate(boolean prop) {
+		AuthConst.flagRunPrivate = prop;
+	}
+	public static String smsRequestUrl;
+	@Value("${sms.request.url}")
+	private void setSmsRequestUrl(String prop) {
+		AuthConst.smsRequestUrl = prop;
+	}
+	@Value("${http.response.auth.claims.deviceid}")
+	public void setResponseAuthClaimDeviceID(String prop) {
+		AuthConst.strResponseAuthClaimDeviceID = prop;
+	}
+	@Value("${security.aes256.key:snubimanse}")
+	public void setAES256Key(String prop) {
+		AuthConst.strAES256Key = prop;
+	}
+	@Value("${code.service.url}")
+	public void setCodeServiceUrl(String prop) {
+		AuthConst.strCodeServiceUrl = prop;
+	}
+	@Value("${http.response.auth.claims.sub}")
+	public void setResponseAuthClaimSub(String prop) {
+		AuthConst.strResponseAuthClaimSub = prop;
+	}
+	@Value("${http.response.auth.claims.ext}")
+	public void setResponseAuthClaimExt(String prop) {
+		AuthConst.strResponseAuthClaimExt = prop;
+	}
+	@Value("${http.response.auth.claims.name}")
+	public void setResponseAuthClaimName(String prop) {
+		AuthConst.strResponseAuthClaimName = prop;
+	}
+	@Value("${http.response.auth.claims.id}")
+	public void setResponseAuthClaimId(String prop) {
+		AuthConst.strResponseAuthClaimId = prop;
+	}
+	@Value("${http.response.auth.claims.organization}")
+	public void setResponseAuthClaimOrganization(String prop) {
+		AuthConst.strResponseAuthClaimOrganization = prop;
+	}
+	@Value("${http.response.auth.claims.department}")
+	public void setResponseAuthClaimDepartment(String prop) {
+		AuthConst.strResponseAuthClaimDepartment = prop;
+	}
+	@Value("${http.response.auth.claims.title}")
+	public void setResponseAuthClaimTitle(String prop) {
+		AuthConst.strResponseAuthClaimTitle = prop;
+	}
+	@Value("${http.response.auth.claims.issue}")
+	public void setResponseAuthClaimIssue(String prop) {
+		AuthConst.strResponseAuthClaimIssue = prop;
+	}
+	@Value("${http.request.parameter.id}")
+	public void setRequestID(String prop) {
+		AuthConst.strRequestID = prop;
+	}
+	@Value("${http.request.parameter.email}")
+	public void setRequestEmail(String prop) {
+		AuthConst.strRequestEmail = prop;
+	}
+	@Value("${http.request.parameter.password}")
+	public void setRequestPassword(String prop) {
+		AuthConst.strRequestPassword = prop;
+	}
+	@Value("${http.request.parameter.device-id}")
+	public void setRequestDeviceId(String prop) {
+		AuthConst.strRequestDeviceId = prop;
+	}
+	@Value("${http.request.parameter.os-code}")
+	public void setRequestOsCode(String prop) {
+		AuthConst.strRequestOsCode = prop;
+	}
+	@Value("${http.request.parameter.system-code}")
+	public void setRequestSystemCode(String prop) {
+		AuthConst.strRequestSystemCode = prop;
+	}
+	public static String strRequestSystemTypeCode;
+	@Value("${http.request.parameter.system-type-code}")
+	public void setRequestSystemTypeCode(String prop) {
+		AuthConst.strRequestSystemTypeCode = prop;
+	}
+	public static String strRequestSystemTypeVersion;
+	@Value("${http.request.parameter.system-type-version}")
+	public void setRequestSystemTypeVersion(String prop) {
+		AuthConst.strRequestSystemTypeVersion = prop;
+	}
+	@Value("${http.response.auth.header}")
+	public void setResponseAuthHeader(String prop) {
+		AuthConst.strResponseAuthHeader = prop;
+	}
+	@Value("${http.response.auth.token}")
+	public void setResponseAuthToken(String prop) {
+		AuthConst.strResponseAuthToken = prop;
+	}
+	@Value("${security.oauth2.resource.jwt.key-value}")
+	public void setSleepTime(String prop) {
+		AuthConst.strSecrete = prop;
+	}
+	@Value("${jwt.token.prefix}")
+	public void setSTokenPrefix(String prop) {
+		AuthConst.strTokenPrefix = prop + " ";
+	}
+	@Value("${security.oauth2.resource.jwt.expired}")
+	public void setExpire(Long prop) {
+		AuthConst.longExpireMilliSecond = prop;
+	}
+	@Value("${packet.response.code}")
+	public void setStrPacketResponseCode(String prop) {
+		AuthConst.strPacketResponseCode = prop;
+	}
+	@Value("${packet.code.name}")
+	public void setStrPacketCodeName(String prop) {
+		AuthConst.strPacketCodeName = prop;
+	}
+	@Value("${packet.token.name}")
+	public void setStrPacketTokenName(String prop) {
+		AuthConst.strPacketTokenName = prop;
+	}
+	public static String strPacketDataName;
+	@Value("${packet.data.name}")
+	public void setStrPacketDataName(String prop) {
+		AuthConst.strPacketDataName = prop;
+	}
+	@Value("${packet.message.name}")
+	public void setStrPacketMessageName(String prop) {
+		AuthConst.strPacketMessageName = prop;
+	}
+	@Value("${packet.error.code.vals}")
+	public void setStrPacketErrorCodeVals(String prop) {
+		AuthConst.strPacketErrorCodeVals = prop;
+	}
+	@Value("${packet.error.message.vals}")
+	public void setStrPacketErrorMessageVals(String prop) {
+		AuthConst.strPacketErrorMessageVals = prop;
+	}
+	@Value("${packet.success.code.vals}")
+	public void setStrPacketSuccessCodeVals(String prop) {
+		AuthConst.strPacketSuccessCodeVals = prop;
+	}
+	@Value("${packet.success.message.vals}")
+	public void setStrPacketSuccessMessageVals(String prop) {
+		AuthConst.strPacketSuccessMessageVals = prop;
+	}
+	@PostConstruct
+	public void getCodeList() {
+		log.info("## BioEmrApiConfig for Code ##");
+		log.info("## codeServiceUrl ## [" + strCodeServiceUrl + "]");
+		Map<String,String> mapParameter = new HashMap<String,String>();
+		mapParameter.put("URL",strCodeServiceUrl);
+		try {
+			AuthConst.mapSnubiResponseCode = CodeUtil.get("",mapParameter);
+		} catch(Exception Ex) {
+			if(AuthConst.flagDebug == true) {
+				Ex.printStackTrace();
+			}
+			try {
+				Thread.sleep(3000);
+				log.info("코드가 없습니다. 재시도 합니다.");
+				this.getCodeList();
+			} catch (InterruptedException EE) {}
+		}
+		print();
+	}
+	private void print() {
+		log.info("## BioEmrAuthConst ##");
+		log.info("## BioEmrAuthConst # expire  # [" + longExpireMilliSecond + " (ms)]");
+		log.info("## BioEmrAuthConst # header  # [" + strResponseAuthHeader + "]");
+		log.info("## BioEmrAuthConst # token   # [" + strResponseAuthToken + "]");
+		log.info("## BioEmrAuthConst # code    # [" + strCodeServiceUrl + "]");
+	}
+}

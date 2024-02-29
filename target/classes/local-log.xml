@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+   <property resource="application-local.properties"></property>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	
+	<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/system/hub.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] --- [%thread] %logger{35} : %msg %n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="HubFileParser" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/HubFileParser.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] :  %msg %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	
+	<appender name="FileReaderFactory" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/FileReaderFactory.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level %msg : [%class{36}] %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	
+	<appender name="FileWriterFactory" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/FileWriterFactory.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level %msg : [%class{36}] %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	
+	<appender name="SynchronizationFactory" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/SynchronizationFactory.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level %msg : [%class{36}] %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	
+	<appender name="SyncDataFilesController" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/SyncDataFilesController.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level %msg : [%class{36}] %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	
+	<appender name="ServiceImplement" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/ServiceImplement.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level %msg : [%class{36}] %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	
+	<appender name="ConductData" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${default.log.path}/ConductData.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level %msg : [%class{36}] %n</pattern>	
+			<!-- <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level [%class{36}] [%thread] %logger{35} : %msg %n</pattern>	 -->		
+		</encoder>
+	</appender>
+	<logger name="Log_HubFileParser" level="info">				<!-- 전체파일 진행사항 -->
+        <appender-ref ref="HubFileParser"></appender-ref>
+    </logger>
+    <logger name="Log_FileReaderFactory" level="info">			<!-- 개별파일 유효성검사,저장 진행사항 -->
+        <appender-ref ref="FileReaderFactory"></appender-ref>
+    </logger>
+    <logger name="Log_SynchronizationFactory" level="info">		<!-- 개별파일 동기화자료생성 진행사항  -->
+        <appender-ref ref="SynchronizationFactory"></appender-ref>
+    </logger>
+     <logger name="Log_SyncDataFilesController" level="info">	<!-- 개별파일 업로드 진행사항   -->
+        <appender-ref ref="SyncDataFilesController"></appender-ref>
+    </logger>
+     <logger name="Log_ServiceImplement" level="info">			<!-- DB 진행사항   -->
+        <appender-ref ref="ServiceImplement"></appender-ref>
+    </logger>
+      <logger name="Log_ConductData" level="info">			<!--  ConductData DB 진행사항   -->
+        <appender-ref ref="ConductData"></appender-ref>
+    </logger>
+      <logger name="Log_FileWriterFactory" level="info">			<!-- 개별파일 유효성검사,저장 진행사항 -->
+        <appender-ref ref="FileWriterFactory"></appender-ref>
+    </logger>
+	
+	<root level="INFO">
+		<appender-ref ref="dailyRollingFileAppender" />
+	</root>
+</configuration>
+

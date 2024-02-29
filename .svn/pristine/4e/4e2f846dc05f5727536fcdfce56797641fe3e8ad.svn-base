@@ -1,0 +1,68 @@
+/****************************************************************************************
+ * File Name    : AuthSecurityConfig.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : 로그인 및 회원가입과 관련된 security Config 설정
+ * 				  참고자료 https://xmfpes.github.io/spring/spring-security/
+ * 	curl -i -H "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTExIiwiZXhwIjoxNTI1MzMxMDQ3fQ.thfKXzmh2YDogneiEO8qLIEZ16ju4VoA0EXfOMk64guIXso6WDaiUYE8YABNhK4lsXifzwoOq7UzTrDkeN0Ajg" http://localhost:8080/members/search/findById?userID=1111
+	curl -i -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWZyZXNoLXRva2VuIjp7InZhbHVlIjoiMjY1NWJkMTctNDQwMS00Y2M2LTk1YWEtMzc3ZWQ4NGFhMDU4IiwiZXhwaXJhdGlvbiI6MTUyNzIxNjY1MDgwM30sIm9yZyI6IuyEnOyauOuMgO2Vmeq1kCIsInVzZXJfbmFtZSI6IjExMTEiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Iuy1nOuqhe2YuCIsImlkIjoiMTExMSIsImV4cCI6MTUyNDY2MDY1MCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjhjYjU2MTFlLTYyNTgtNDc1OC1hNmRhLTRmOWY1MzM1NmI0ZiIsImVtYWlsIjoieGFuaXR1c0BuYXRlLmNvbSIsImNsaWVudF9pZCI6Im15X2NsaWVudF9pZCJ9.IOV6Oq5K2OwQaReGUllNvWs4-qSYehkKidTFQH_Kh1s" http://localhost:8080/members/search/findById?userID=1111
+ * Modification Log
+ * ===============================================================
+ * Ver  Date        Author     Modification
+ * ===============================================================
+   1.0  2018.04.06  mh.choi    Create
+   		2018.04.11  mh.choi    CORS Filter 등록 -> 삭제
+****************************************************************************************/
+package org.snubi.auth.security.config;
+
+import org.snubi.auth.security.filter.AuthJWTAuthenticationFilter;
+import org.snubi.auth.security.filter.AuthJWTAuthorizationFilter;
+import org.snubi.auth.security.handler.CustomLoginFailureHandler;
+import org.snubi.auth.security.handler.CustomLogoutSuccessHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.oauth2.client.OAuth2ClientContext;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+
+@EnableWebSecurity
+public class AuthSecurityConfig extends WebSecurityConfigurerAdapter {
+
+	@Autowired
+	OAuth2ClientContext oauth2ClientContext;
+
+	@Autowired
+	CustomLogoutSuccessHandler customLogoutSuccessHandler;
+
+	@Override
+	public void configure(WebSecurity web) throws Exception {
+		web.ignoring().antMatchers("/css/**", "/script/**", "/image/**", "/fonts/**", "/lib/**");
+	}
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http.csrf().disable();
+		http.cors();
+		http.authorizeRequests()
+			.antMatchers("/").permitAll()
+			.antMatchers("/join").permitAll()
+			.antMatchers("/find/**").permitAll()
+			.antMatchers("/search/**").authenticated()
+			.antMatchers("/member/**").authenticated()
+			.antMatchers("/admin/**").authenticated()
+			.and()
+			.addFilter(new AuthJWTAuthenticationFilter(authenticationManager(), getApplicationContext()))
+			.addFilter(new AuthJWTAuthorizationFilter(authenticationManager()))
+			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+	}
+	@Bean
+	public AuthenticationFailureHandler failureHandler() {
+	    return new CustomLoginFailureHandler();
+	}
+}

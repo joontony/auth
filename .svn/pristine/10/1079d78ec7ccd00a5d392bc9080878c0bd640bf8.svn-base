@@ -1,0 +1,108 @@
+/****************************************************************************************
+ * File Name    : BioemrAuthApplication.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : Auth
+ * Modification Log
+ * ===============================================================
+ * Ver  Date        Author     Modification
+ * ===============================================================
+   1.0  2018.04.05  mh.choi    Create
+   1.0  2018.04.13  mh.choi    jdbcTokenStore -> JwtTokenStore, jwt
+   1.0  2018.04.17  mh.choi    implements CommandLineRunner to make member-role-definition
+   1.0  2018.04.18  mh.choi    append custom claims to JWT Token
+****************************************************************************************/
+package org.snubi.auth;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.ObjectProvider;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.oauth2.authserver.AuthorizationServerProperties;
+import org.springframework.boot.autoconfigure.security.oauth2.authserver.OAuth2AuthorizationServerConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.scheduling.TaskScheduler;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.concurrent.ConcurrentTaskScheduler;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
+import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.client.BaseClientDetails;
+import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
+import org.springframework.security.oauth2.provider.token.AccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.TokenStore;
+
+@EnableAuthorizationServer
+@SpringBootApplication
+@PropertySource("classpath:config.properties")
+@EnableResourceServer
+@EnableScheduling
+public class AuthApplication extends SpringBootServletInitializer implements CommandLineRunner {
+
+	@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(AuthApplication.class);
+    }
+	public static void main(String[] args) {
+		SpringApplication.run(AuthApplication.class, args);
+	}
+	@Override
+	public void run(String... arg) throws Exception {
+
+	}
+	@Bean
+    public TaskScheduler taskScheduler() {
+        return new ConcurrentTaskScheduler();
+    }
+}
+@Configuration
+class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
+	@Autowired
+	ClientDetailsService clientDetailsService;
+	@Bean
+	@Primary
+	public JdbcClientDetailsService jdbcClientDetailsService(DataSource dataSource) {
+	    return new JdbcClientDetailsService(dataSource);
+	}
+	@Override
+	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+	    clients.withClientDetails(clientDetailsService);
+	}
+}
+@Configuration
+class JwtOAuth2AuthorizationServerConfiguration extends OAuth2AuthorizationServerConfiguration {
+
+	private final ClientDetailsService clientDetailsService;
+	public JwtOAuth2AuthorizationServerConfiguration	(BaseClientDetails details
+			 											,AuthenticationManager authenticationManager
+	                                                    ,ObjectProvider<TokenStore> tokenStoreProvider
+	                                                    ,ObjectProvider<AccessTokenConverter> tokenConverter
+	                                                    ,AuthorizationServerProperties properties
+	                                                    ,ClientDetailsService clientDetailsService) {
+		super(details, authenticationManager, tokenStoreProvider, tokenConverter, properties);
+	    this.clientDetailsService = clientDetailsService;
+	}
+	@Override
+	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+		super.configure(endpoints);
+	}
+	@Override
+	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+		clients.withClientDetails(clientDetailsService);
+	}
+}

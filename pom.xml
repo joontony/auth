@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.snubi</groupId>
+	<artifactId>auth</artifactId>
+	<version>1.4.006</version>
+	<!--
+	Version : 1.4.006 : Log4JDBC 재거 / 로그수집 확대 / log4jdbc.log4j2.properties 삭제 / AOP  적용
+	Version : 1.4.005 : 감리대응-정적분석
+	version : 1.4.004 : 비밀번호 암호알고리즘 추가 (AES256 + ?) + PATCH
+	version : 1.4.003 : index.html  추가함
+	version : 1.4.002 : 사용자 가입/로그인/정보수정시 SystemTypeCode, SystemTypeVersion 추가
+		(1) 1.4.001 적용사항 취소
+		(2) tb_auth_member_device 테이블 필드추가
+			- alter table tb_auth_member_device add SYSTEM_TYPE_CODE varchar(20);
+			- alter table tb_auth_member_device add SYSTEM_TYPE_VERSION varchar(20);
+			- COMMENT ON COLUMN XANITUS.TB_AUTH_MEMBER_DEVICE.SYSTEM_TYPE_CODE IS '아바타/XNet 하위 코드';
+			- COMMENT ON COLUMN XANITUS.TB_AUTH_MEMBER_DEVICE.SYSTEM_TYPE_VERSION IS '아바타/XNet 하위 코드  버전';
+
+		(3) 설정추가 : 	code.service.url = https://develop.snubi.org:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar
+		(4) 설정추가 : 	http.request.parameter.system-type-code=systemTypeCode
+						http.request.parameter.system-type-version=systemTypeVersion
+	version : 1.4.001 :
+		(1) create database auth_v2;
+		(2) create table auth_v2.tb_auth_member;
+		(3) create table auth_v2.tb_auth_member_orgnization;
+		(4) create table auth_v2.tb_auth_member_device;
+		(5) create table auth_v2.tb_auth_member_role;
+	version : 1.4.000 :
+		(1) AuthMember내 @Size 를 제거함.
+	-->
+	<packaging>jar</packaging>
+	<name>auth</name>
+	<description>Auth</description>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.11.BUILD-SNAPSHOT</version>
+		<relativePath/>
+	</parent>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+	      	<groupId>org.apache.tomcat.embed</groupId>
+	      	<artifactId>tomcat-embed-jasper</artifactId>
+	      	<scope>provided</scope>
+	  	</dependency>
+	  	<dependency>
+	   	<groupId>javax.servlet</groupId>
+	   	<artifactId>jstl</artifactId>
+	  	</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-batch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+		    <groupId>com.googlecode.log4jdbc</groupId>
+		    <artifactId>log4jdbc</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+		    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+		    <version>1.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+        	<groupId>org.springframework.security.oauth</groupId>
+        	<artifactId>spring-security-oauth2</artifactId>
+    	</dependency>
+    	<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-jwt</artifactId>
+		</dependency>
+		<dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-core</artifactId>
+    		<version>5.2.16.Final</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-entitymanager</artifactId>
+    		<version>4.3.11.Final</version>
+		</dependency>
+		<dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+		<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-annotations</artifactId>
+		</dependency>
+        <dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-core</artifactId>
+    		<version>2.9.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+    		<groupId>com.github.fge</groupId>
+    		<artifactId>json-schema-avro</artifactId>
+    		<version>0.1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+    		<groupId>org.apache.httpcomponents</groupId>
+    		<artifactId>httpclient</artifactId>
+    		<version>4.5.5</version>
+		</dependency>
+		<dependency>
+    		<groupId>commons-io</groupId>
+    		<artifactId>commons-io</artifactId>
+    		<version>2.6</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20180130</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.jsonwebtoken</groupId>
+		    <artifactId>jjwt</artifactId>
+		    <version>0.6.0</version>
+		</dependency>
+		<dependency>
+      		<groupId>org.snubi.lib</groupId>
+         	<artifactId>org.snubi.lib</artifactId>
+         	<version>1.4.0</version>
+         	<!-- <scope>system</scope> -->
+         	<!-- <systemPath>C:/workspace/snubi-library/target/org.snubi.lib-1.3.0.jar</systemPath> -->
+      	</dependency>
+      	<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- <dependency>
+		 	<groupId>com.oracle</groupId>
+		    <artifactId>ojdbc7</artifactId>
+		    <version>12.2.0.1</version>
+    	</dependency>-->
+    	<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>

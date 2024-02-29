@@ -1,0 +1,73 @@
+/****************************************************************************************
+ * File Name    : AuthJWTAuthorizationFilter.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  :
+ * Modification Log
+ * ======================================================================================
+ * Ver  Date        Author     	Modification
+ * ======================================================================================
+   1.0  2018.04.06  mh.choi
+   1.0  2018.09.18  mh.choi    	TOKEN-EXP를로그및기타문제로인해사용하지않는다.
+****************************************************************************************/
+package org.snubi.auth.security.filter;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.snubi.auth.AuthConst;
+import org.snubi.lib.date.DateUtil;
+//import org.snubi.logging.ReadableRequestWrapper;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class AuthJWTAuthorizationFilter extends BasicAuthenticationFilter {
+
+    public AuthJWTAuthorizationFilter(AuthenticationManager authManager) {
+        super(authManager);
+    }
+    @Override
+    protected void doFilterInternal(HttpServletRequest req,HttpServletResponse res,FilterChain chain) throws IOException, ServletException {
+    	String header = req.getHeader(AuthConst.strResponseAuthHeader);
+        if (header == null || !header.startsWith(AuthConst.strTokenPrefix)) {
+            chain.doFilter(req, res);
+            return;
+        }
+        UsernamePasswordAuthenticationToken authentication = getAuthentication(req);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        chain.doFilter(req, res);
+    }
+    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
+        String token = request.getHeader(AuthConst.strResponseAuthHeader);
+        if (token != null) {
+        	Claims clsClaims = Jwts.parser().setSigningKey(AuthConst.strSecrete.getBytes()).parseClaimsJws(token.replace(AuthConst.strTokenPrefix, "")).getBody();
+            String strUser = clsClaims.getSubject();
+            long longIssue = Long.parseLong((String) clsClaims.get(AuthConst.strResponseAuthClaimIssue));
+            long longTimes = Long.parseLong(DateUtil.getThisDateString("yyyyMMddHHmmss"));
+            if(longIssue < longTimes) {
+            	log.error("TOKEN이 만료되었습니다[{}:{}]",longIssue,longTimes);
+            	return null;
+            }
+            if(strUser != null) {
+                return new UsernamePasswordAuthenticationToken(strUser, null, new ArrayList<>());
+            }
+            return null;
+        }
+        return null;
+    }
+}

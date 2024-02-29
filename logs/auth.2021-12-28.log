@@ -1,0 +1,1072 @@
+2021:12:28 00:00:19.604 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:02:19.631 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:04:19.635 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:06:19.641 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:08:19.647 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:10:19.664 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:12:19.669 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:14:19.672 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:16:19.678 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:18:19.688 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:20:19.694 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:22:19.698 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:24:19.725 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:26:19.730 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:28:19.734 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:30:19.736 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:32:19.746 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:34:19.748 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:36:19.788 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:38:19.794 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:40:19.801 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:42:19.811 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:44:19.815 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:46:19.830 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:48:19.843 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:50:19.844 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:52:19.849 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:54:19.853 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:56:19.859 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 00:58:19.862 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:00:19.866 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:02:19.873 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:04:19.876 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:06:19.881 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:08:19.891 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:10:19.894 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:12:19.899 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:14:19.905 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:16:19.909 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:18:19.913 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:20:19.917 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:22:19.921 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:24:19.929 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:26:19.932 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:28:19.934 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:30:19.941 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:32:19.945 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:34:19.950 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:36:19.956 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:38:19.961 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:40:19.968 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:42:19.972 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:44:19.978 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:46:19.987 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:48:19.992 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:50:19.996 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:52:20.001 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:54:20.005 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:56:20.010 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 01:58:20.017 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:00:20.024 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:02:20.027 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:04:20.033 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:06:20.045 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:08:20.052 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:10:20.055 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:12:20.068 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:14:20.072 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:16:20.077 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:18:20.081 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:20:20.096 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:22:20.102 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:24:20.108 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:26:20.117 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:28:20.120 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:30:20.123 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:32:20.128 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:34:20.130 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:36:20.138 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:38:20.148 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:40:20.153 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:42:20.157 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:44:20.161 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:46:20.169 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:48:20.180 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:50:20.184 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:52:20.198 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:54:20.200 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:56:20.205 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 02:58:20.209 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:00:20.212 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:02:20.238 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:04:20.243 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:06:20.247 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:08:20.290 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:10:20.303 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:12:20.307 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:14:20.313 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:16:20.318 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:18:20.330 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:20:20.335 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:22:20.342 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:24:20.347 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:26:20.362 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:28:20.369 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:30:20.394 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:32:20.400 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:34:20.419 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:36:20.428 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:38:20.431 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:40:20.440 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:42:20.447 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:44:20.454 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:46:20.465 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:48:20.470 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:50:20.477 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:52:20.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:54:20.524 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:56:20.532 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 03:58:20.538 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:00:20.544 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:02:20.551 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:04:20.558 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:06:20.561 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:08:20.567 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:10:20.572 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:12:20.577 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:14:20.582 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:16:20.586 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:18:20.594 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:20:20.600 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:22:20.609 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:24:20.615 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:26:20.618 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:28:20.622 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:30:20.631 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:32:20.635 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:34:20.640 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:36:20.648 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:38:20.655 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:40:20.672 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:42:20.674 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:44:20.680 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:46:20.685 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:48:20.690 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:50:20.703 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:52:20.707 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:54:20.714 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:56:20.720 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 04:58:20.726 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:00:00.049 INFO  : org.snubi.auth.cron.MemberShipCheck : user [xanitus] deactive, email : xanitus@nate.com 
+2021:12:28 05:00:20.729 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:02:20.757 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:04:20.770 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:06:20.783 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:08:20.787 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:10:20.792 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:12:20.795 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:14:20.800 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:16:20.805 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:18:20.808 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:20:20.831 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:22:20.834 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:24:20.837 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:26:20.841 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:28:20.849 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:30:20.851 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:32:20.856 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:34:20.859 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:36:20.872 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:38:20.879 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:40:20.884 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:42:20.887 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:44:20.895 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:46:20.900 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:48:20.909 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:50:20.916 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:52:20.923 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:54:20.929 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:56:20.935 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 05:58:20.941 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:00:20.944 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:02:20.976 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:04:20.987 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:06:20.995 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:08:20.999 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:10:21.003 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:12:21.011 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:14:21.018 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:16:21.026 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:18:21.035 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:20:21.040 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:22:21.064 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:24:21.096 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:26:21.106 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:28:21.112 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:30:21.118 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:32:21.123 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:34:21.128 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:36:21.138 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:38:21.141 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:40:21.147 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:42:21.153 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:44:21.160 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:46:21.164 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:48:21.171 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:50:21.175 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:52:21.181 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:54:21.186 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:56:21.188 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 06:58:21.194 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:00:21.202 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:02:21.223 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:04:21.243 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:06:21.248 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:08:21.254 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:10:21.259 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:12:21.263 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:14:21.268 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:16:21.284 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:18:21.288 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:20:21.295 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:22:21.303 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:24:21.308 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:26:21.335 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:28:21.351 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:30:21.355 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:32:21.358 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:34:21.368 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:36:21.370 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:38:21.403 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:40:21.407 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:42:21.411 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:44:21.415 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:46:21.418 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:48:21.421 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:50:21.434 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:52:21.440 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:54:21.445 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:56:21.453 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 07:58:21.462 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:00:21.479 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:02:21.488 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:04:21.501 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:06:21.507 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:08:21.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:10:21.517 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:12:21.519 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:14:21.522 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:16:21.526 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:18:21.535 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:20:21.538 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:22:21.542 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:24:21.546 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:26:21.549 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:28:21.553 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:30:21.556 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:32:21.558 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:34:21.561 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:36:21.566 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:38:21.570 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:40:21.572 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:42:21.574 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:44:21.578 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:46:21.581 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:48:21.585 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:50:21.588 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:52:21.602 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:54:21.604 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:56:21.607 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 08:58:21.615 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:00:21.619 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:02:21.624 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:04:21.626 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:06:21.650 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:08:21.653 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:10:21.658 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:12:21.662 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:14:21.703 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:16:21.707 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:18:21.709 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:20:21.713 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:22:21.717 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:24:21.719 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:26:21.722 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:28:21.726 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 09:28:54.918 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2021:12:28 09:28:54.922 INFO  : org.springframework.context.support.AbstractApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158da8e: startup date [Fri Dec 24 13:19:11 KST 2021]; root of context hierarchy 
+2021:12:28 09:28:54.954 INFO  : org.springframework.jmx.export.MBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2021:12:28 09:28:54.963 INFO  : org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021:12:28 12:53:28.765 INFO  : org.springframework.boot.StartupInfoLogger : Starting AuthApplication on DESKTOP-VJ7PMMN with PID 6196 (C:\workspace\auth\target\classes started by xanit in C:\workspace\auth) 
+2021:12:28 12:53:28.770 INFO  : org.springframework.boot.SpringApplication : The following profiles are active: local.mysql 
+2021:12:28 12:53:28.847 INFO  : org.springframework.context.support.AbstractApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158da8e: startup date [Tue Dec 28 12:53:28 KST 2021]; root of context hierarchy 
+2021:12:28 12:53:28.937 INFO  : org.hibernate.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.6.Final 
+2021:12:28 12:53:29.806 INFO  : org.springframework.beans.factory.support.DefaultListableBeanFactory : Overriding bean definition for bean 'httpRequestHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.class]] 
+2021:12:28 12:53:30.413 INFO  : org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2afe4397] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:12:28 12:53:30.593 INFO  : org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.OAuth2ClientProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:12:28 12:53:30.599 INFO  : org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.security.oauth2.OAuth2AutoConfiguration' of type [org.springframework.boot.autoconfigure.security.oauth2.OAuth2AutoConfiguration$$EnhancerBySpringCGLIB$$e247ff97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:12:28 12:53:30.620 INFO  : org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'resourceServerProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2021:12:28 12:53:31.006 INFO  : org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 19100 (http) 
+2021:12:28 12:53:31.023 INFO  : org.apache.juli.logging.DirectJDKLog : Initializing ProtocolHandler ["http-nio-19100"] 
+2021:12:28 12:53:31.035 INFO  : org.apache.juli.logging.DirectJDKLog : Starting service [Tomcat] 
+2021:12:28 12:53:31.036 INFO  : org.apache.juli.logging.DirectJDKLog : Starting Servlet Engine: Apache Tomcat/8.5.29 
+2021:12:28 12:53:31.315 INFO  : org.apache.juli.logging.DirectJDKLog : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2021:12:28 12:53:31.321 INFO  : org.apache.juli.logging.DirectJDKLog : Initializing Spring embedded WebApplicationContext 
+2021:12:28 12:53:31.322 INFO  : org.springframework.boot.context.embedded.EmbeddedWebApplicationContext : Root WebApplicationContext: initialization completed in 2475 ms 
+2021:12:28 12:53:31.664 INFO  : org.springframework.boot.web.servlet.AbstractFilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2021:12:28 12:53:31.666 INFO  : org.springframework.boot.web.servlet.AbstractFilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2021:12:28 12:53:31.667 INFO  : org.springframework.boot.web.servlet.AbstractFilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2021:12:28 12:53:31.668 INFO  : org.springframework.boot.web.servlet.AbstractFilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2021:12:28 12:53:31.683 INFO  : org.springframework.boot.web.servlet.AbstractFilterRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*] 
+2021:12:28 12:53:31.695 INFO  : org.springframework.boot.web.servlet.AbstractFilterRegistrationBean : Mapping filter: 'requestFilter' to urls: [/*] 
+2021:12:28 12:53:31.697 INFO  : org.springframework.boot.web.servlet.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/] 
+2021:12:28 12:53:32.794 INFO  : org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default' 
+2021:12:28 12:53:32.817 INFO  : org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+2021:12:28 12:53:32.976 INFO  : org.hibernate.Version : HHH000412: Hibernate Core {5.2.16.Final} 
+2021:12:28 12:53:32.979 INFO  : org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found 
+2021:12:28 12:53:33.090 INFO  : org.hibernate.annotations.common.reflection.java.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.0.1.Final} 
+2021:12:28 12:53:33.941 INFO  : org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2021:12:28 12:53:35.226 INFO  : org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021:12:28 12:53:35.859 INFO  : org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory 
+2021:12:28 12:53:36.177 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:53:36.178 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:53:40.331 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:53:40.331 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:53:40.331 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:53:44.335 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:53:44.335 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:53:44.336 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:53:48.340 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:53:48.340 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:53:48.340 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:53:52.347 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:53:52.347 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:53:52.347 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:53:56.355 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:53:56.355 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:53:56.355 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:00.361 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:00.361 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:00.361 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:04.370 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:04.371 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:04.372 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:08.379 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:08.379 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:08.380 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:12.386 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:12.386 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:12.387 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:16.394 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:16.394 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:16.395 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:20.400 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:20.400 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:20.401 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:24.410 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:24.411 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:24.412 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:28.419 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:28.419 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:28.420 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:32.428 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:32.429 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:32.429 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:36.439 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:36.440 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:36.441 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:40.450 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:40.450 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:40.450 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:44.456 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:44.457 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:44.457 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:48.463 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:48.464 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:48.466 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:52.473 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:52.474 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:52.474 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:54:56.480 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:54:56.480 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:54:56.480 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:00.487 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:00.488 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:00.489 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:04.493 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:04.493 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:04.494 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:08.498 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:08.498 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:08.499 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:12.507 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:12.508 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:12.509 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:16.514 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:16.514 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:16.514 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:20.524 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:20.525 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:20.525 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:24.532 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:24.533 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:24.533 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:28.538 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:28.538 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:28.538 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:32.543 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:32.543 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:32.543 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:36.552 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:36.553 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:36.553 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:40.562 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:40.563 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:40.563 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:44.586 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:44.586 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:44.587 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:48.590 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:48.591 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:48.591 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:52.599 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:52.599 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:52.599 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:55:56.601 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:55:56.601 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:55:56.601 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:00.610 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:56:00.610 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:56:00.610 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:04.615 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:56:04.615 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:56:04.615 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:08.622 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:56:08.622 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:56:08.622 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:12.627 INFO  : org.snubi.auth.AuthConst : 코드가 없습니다. 재시도 합니다. 
+2021:12:28 12:56:12.627 INFO  : org.snubi.auth.AuthConst : ## AuthConfig for Code ## 
+2021:12:28 12:56:12.627 INFO  : org.snubi.auth.AuthConst : ## codeServiceUrl ## [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.100 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.100 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.101 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.101 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.101 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.101 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.101 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.101 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.102 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.102 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.102 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.102 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.102 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.102 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.103 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.103 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.103 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.103 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.103 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.104 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.104 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.104 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.104 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.105 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.105 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.105 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.105 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.105 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.105 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.106 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.106 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.106 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.106 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.106 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.107 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.107 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.107 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.107 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.108 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.108 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.108 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.108 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.108 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.109 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.109 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.109 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.109 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.109 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.110 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.110 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.110 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.110 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.110 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.110 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.111 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.111 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.111 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.111 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.111 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.111 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.112 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.112 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.112 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.112 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.112 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.113 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.113 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.113 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.113 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.113 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.114 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.116 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.116 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.116 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.116 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.116 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.117 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.117 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.117 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.117 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.117 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.117 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.118 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.118 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.118 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.118 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.119 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.119 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.119 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.119 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.119 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.120 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.120 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.120 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.120 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.120 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.120 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.121 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.121 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.121 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.121 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.122 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.122 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.122 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.122 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.122 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.123 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.123 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.123 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.123 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.123 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.124 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.125 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.125 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.125 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.125 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.125 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.126 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.126 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.126 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.126 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.126 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.126 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.127 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.127 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.127 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.127 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.127 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.127 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.128 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.129 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.130 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.131 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.133 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.133 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.133 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.133 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.133 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.134 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.134 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.134 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.134 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.134 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.135 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.135 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.135 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.135 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.135 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.135 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.136 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.136 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.136 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.136 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.136 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.136 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.137 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst ## 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # expire  # [36000000 (ms)] 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # header  # [Authorization] 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # token   # [Bearer] 
+2021:12:28 12:56:13.138 INFO  : org.snubi.auth.AuthConst : ## BioEmrAuthConst # code    # [http://localhost:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar] 
+2021:12:28 12:56:14.302 INFO  : org.springframework.boot.autoconfigure.security.oauth2.authserver.OAuth2AuthorizationServerConfiguration$ClientDetailsLogger : Initialized OAuth2 Client
+
+security.oauth2.client.client-id = snubi_user
+security.oauth2.client.client-secret = d50a4638-4728-4df4-a469-2357f8624380
+
+ 
+2021:12:28 12:56:14.621 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/authorize]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map<java.lang.String, java.lang.Object>,java.util.Map<java.lang.String, java.lang.String>,org.springframework.web.bind.support.SessionStatus,java.security.Principal) 
+2021:12:28 12:56:14.622 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/authorize],methods=[POST],params=[user_oauth_approval]}" onto public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map<java.lang.String, java.lang.String>,java.util.Map<java.lang.String, ?>,org.springframework.web.bind.support.SessionStatus,java.security.Principal) 
+2021:12:28 12:56:14.624 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/token],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.getAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:14.624 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/token],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:14.625 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/check_token]}" onto public java.util.Map<java.lang.String, ?> org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint.checkToken(java.lang.String) 
+2021:12:28 12:56:14.626 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/confirm_access]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest) throws java.lang.Exception 
+2021:12:28 12:56:14.627 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/oauth/error]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint.handleError(javax.servlet.http.HttpServletRequest) 
+2021:12:28 12:56:14.674 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: Ant [pattern='/css/**'], [] 
+2021:12:28 12:56:14.674 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: Ant [pattern='/script/**'], [] 
+2021:12:28 12:56:14.675 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: Ant [pattern='/image/**'], [] 
+2021:12:28 12:56:14.675 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: Ant [pattern='/fonts/**'], [] 
+2021:12:28 12:56:14.675 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: Ant [pattern='/lib/**'], [] 
+2021:12:28 12:56:14.843 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55f23335, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cca3e8c, org.springframework.security.web.header.HeaderWriterFilter@38093ffe, org.springframework.security.web.authentication.logout.LogoutFilter@1d3546f9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1abf951a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55c8fc60, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8167f57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33837bd4, org.springframework.security.web.session.SessionManagementFilter@7a0d2c80, org.springframework.security.web.access.ExceptionTranslationFilter@2173e4d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ba1f56e] 
+2021:12:28 12:56:14.904 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/admin/user/list],methods=[GET]}" onto public java.lang.String org.snubi.auth.admin.controller.AdminController.getUserList(org.springframework.data.domain.Pageable,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List<java.lang.String>,java.util.List<java.lang.String>) 
+2021:12:28 12:56:14.908 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member],methods=[DELETE]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.delete(org.snubi.auth.entity.AuthMember) 
+2021:12:28 12:56:14.909 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/join],methods=[POST]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.create(org.snubi.auth.entity.AuthMemberSet) 
+2021:12:28 12:56:14.909 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member/{id}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.getMember(java.lang.String) 
+2021:12:28 12:56:14.910 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member/doctor/{id}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.getDoctor(java.lang.String) 
+2021:12:28 12:56:14.910 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member/list/{system}/{organization}/{department}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.getMemberList(org.springframework.data.domain.Pageable,java.lang.String,java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.911 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/id/{id}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.searchID(java.lang.String) 
+2021:12:28 12:56:14.912 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/search/id/{id}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.checkMember(java.lang.String) 
+2021:12:28 12:56:14.912 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member],methods=[PUT]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.updateMember(org.snubi.auth.entity.AuthMemberSet) 
+2021:12:28 12:56:14.913 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/email/{email}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.searchEmail(java.lang.String) 
+2021:12:28 12:56:14.916 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/id/email/{id}/{email:.+}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.checkMemberEmail(java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.916 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member/count/organizationCode/departmentCode],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.getCountMemberDept() 
+2021:12:28 12:56:14.917 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/password/{id}/{mobile}/{name}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.findPasswordByName(java.lang.String,java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.919 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/email],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.searchMemberEmail(java.lang.String,java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.920 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/password],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.searchMemberPassword(java.lang.String,java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.920 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/list/{system}/{organization}/{department}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.getMemberListWithoutAuth(org.springframework.data.domain.Pageable,java.lang.String,java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.921 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/search/password/{id}/{mobile}/{name}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.searchPasswordByName(java.lang.String,java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.921 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/find/mobile/{mobile}/{name}],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.searchMemberByName(java.lang.String,java.lang.String) 
+2021:12:28 12:56:14.921 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/member/count/organizationCode],methods=[GET]}" onto public java.lang.String org.snubi.auth.member.controller.AuthMemberController.getCountMemberOrg() 
+2021:12:28 12:56:14.924 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2021:12:28 12:56:14.925 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2021:12:28 12:56:14.966 INFO  : org.springframework.web.servlet.handler.AbstractUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2021:12:28 12:56:14.967 INFO  : org.springframework.web.servlet.handler.AbstractUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2021:12:28 12:56:14.989 INFO  : org.springframework.web.servlet.handler.AbstractUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2021:12:28 12:56:14.995 INFO  : org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html] 
+2021:12:28 12:56:15.019 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.020 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.021 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.022 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.022 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.023 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.024 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.024 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.025 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException 
+2021:12:28 12:56:15.025 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.026 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException 
+2021:12:28 12:56:15.028 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception 
+2021:12:28 12:56:15.034 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception 
+2021:12:28 12:56:15.037 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception 
+2021:12:28 12:56:15.038 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception 
+2021:12:28 12:56:15.041 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception 
+2021:12:28 12:56:15.043 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception 
+2021:12:28 12:56:15.044 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories() 
+2021:12:28 12:56:15.046 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories() 
+2021:12:28 12:56:15.047 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories() 
+2021:12:28 12:56:15.054 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.054 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.055 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) 
+2021:12:28 12:56:15.057 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) 
+2021:12:28 12:56:15.058 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) 
+2021:12:28 12:56:15.059 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.060 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) 
+2021:12:28 12:56:15.068 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions() 
+2021:12:28 12:56:15.069 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata() 
+2021:12:28 12:56:15.089 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.090 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions() 
+2021:12:28 12:56:15.091 INFO  : org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry : Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation) 
+2021:12:28 12:56:15.103 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e3dc24f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e030cc1, org.springframework.security.web.header.HeaderWriterFilter@6549ce71, org.springframework.web.filter.CorsFilter@3ea8ff31, org.springframework.security.web.authentication.logout.LogoutFilter@391e5ffa, org.snubi.auth.security.filter.AuthJWTAuthenticationFilter@5ba36c83, org.snubi.auth.security.filter.AuthJWTAuthorizationFilter@5342032a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f2ef402, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14bf9fd0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@239d9cb7, org.springframework.security.web.session.SessionManagementFilter@733bd6f3, org.springframework.security.web.access.ExceptionTranslationFilter@23365142, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10830d50] 
+2021:12:28 12:56:15.154 INFO  : org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@62d6ac, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@103e9972, org.springframework.security.web.context.SecurityContextPersistenceFilter@266a47fd, org.springframework.security.web.header.HeaderWriterFilter@767b9d66, org.springframework.security.web.authentication.logout.LogoutFilter@19fc0ef7, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@423762ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a93c798, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20a9fb01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75dbe490, org.springframework.security.web.session.SessionManagementFilter@687fd6e, org.springframework.security.web.access.ExceptionTranslationFilter@581e8969, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a947424] 
+2021:12:28 12:56:15.558 INFO  : org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158da8e: startup date [Tue Dec 28 12:53:28 KST 2021]; root of context hierarchy 
+2021:12:28 12:56:15.619 INFO  : org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler 
+2021:12:28 12:56:15.870 INFO  : org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158da8e: startup date [Tue Dec 28 12:53:28 KST 2021]; root of context hierarchy 
+2021:12:28 12:56:16.098 INFO  : org.springframework.jmx.export.MBeanExporter : Registering beans for JMX exposure on startup 
+2021:12:28 12:56:16.125 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 12:56:16.126 INFO  : org.apache.juli.logging.DirectJDKLog : Starting ProtocolHandler ["http-nio-19100"] 
+2021:12:28 12:56:16.141 INFO  : org.apache.juli.logging.DirectJDKLog : Using a shared selector for servlet write/read 
+2021:12:28 12:56:16.171 INFO  : org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer : Tomcat started on port(s): 19100 (http) 
+2021:12:28 12:56:16.178 INFO  : org.springframework.boot.StartupInfoLogger : Started AuthApplication in 167.781 seconds (JVM running for 169.347) 
+2021:12:28 12:56:20.212 INFO  : org.apache.juli.logging.DirectJDKLog : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2021:12:28 12:56:20.212 INFO  : org.springframework.web.servlet.FrameworkServlet : FrameworkServlet 'dispatcherServlet': initialization started 
+2021:12:28 12:56:20.244 INFO  : org.springframework.web.servlet.FrameworkServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms 
+2021:12:28 12:56:20.299 INFO  : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : Login : content-type [application/json;charset=UTF-8] 
+2021:12:28 12:56:20.523 INFO  : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : 검색된 아이디 [xanitus] by 이메일 [xanitus@nate.com] 
+2021:12:28 12:56:20.532 ERROR : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : 아이디[xanitus]가 사용가능한 상태가 아닙니다.. 
+2021:12:28 12:56:20.536 ERROR : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : 사용자정보오류 
+2021:12:28 12:57:20.667 INFO  : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : Login : content-type [application/json;charset=UTF-8] 
+2021:12:28 12:57:20.690 INFO  : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : 검색된 아이디 [xanitus] by 이메일 [xanitus@nate.com] 
+2021:12:28 12:57:20.963 INFO  : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : Login : email : [xanitus@nate.com], id : [xanitus], digested : [false], pw : [jd7XOFzzvjRhzgXJCs+9rg==] 
+2021:12:28 12:57:20.969 INFO  : org.snubi.auth.logging.LoggerAspect : ## saveLog  ## AuthLogRaw(seq=0, id=xanitus, request=192.168.0.72:19100/login, method=POST, userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36, ip=192.168.0.72, target=xanitus, category=login, categorySub=null, job=search, etc=null, dateLog=Tue Dec 28 12:57:20 KST 2021) 
+2021:12:28 12:57:21.054 INFO  : org.snubi.auth.security.filter.AuthJWTAuthenticationFilter : Login : isAuthenticated [true] 
+2021:12:28 12:58:16.130 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:00:16.134 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:02:16.139 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:04:16.142 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:06:16.147 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:08:16.149 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:10:16.153 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:12:16.161 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:14:16.165 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:16:16.169 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:18:16.174 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:20:16.180 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:22:16.187 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:24:16.190 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:26:16.197 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:28:16.201 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:30:16.205 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:32:16.210 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:34:16.214 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:36:16.219 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:38:16.224 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:40:16.228 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:42:16.233 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:44:16.237 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:46:16.240 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:48:16.243 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:50:16.248 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:52:16.255 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:54:16.263 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:56:16.269 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 13:58:16.280 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:00:16.285 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:02:16.291 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:04:16.298 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:06:16.301 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:08:16.304 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:10:16.308 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:12:16.312 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:14:16.319 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:16:16.325 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:18:16.329 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:20:16.344 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:22:16.350 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:24:16.354 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:26:16.357 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:28:16.360 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:30:16.362 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:32:16.369 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:34:16.375 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:36:16.380 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:38:16.384 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:40:16.387 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:42:16.393 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:44:16.399 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:46:16.404 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:48:16.415 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:50:16.420 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:52:16.427 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:54:16.435 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:56:16.438 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 14:58:16.440 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:00:16.450 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:02:16.468 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:04:16.474 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:06:16.481 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:08:16.497 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:10:16.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:12:16.530 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:14:16.546 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:16:16.551 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:18:16.563 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:20:16.579 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:22:16.596 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:24:16.613 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:26:16.629 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:28:16.646 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:30:16.663 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:32:16.680 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:34:16.696 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:36:16.713 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:38:16.729 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:40:16.746 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:42:16.763 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:44:16.779 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:46:16.796 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:48:16.813 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:50:16.830 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:52:16.846 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:54:16.863 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:56:16.880 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 15:58:16.896 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:00:16.913 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:02:16.930 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:04:16.946 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:06:16.963 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:08:16.980 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:10:16.996 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:12:17.013 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:14:17.030 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:16:17.046 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:18:17.063 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:20:17.080 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:22:17.096 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:24:17.113 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:26:17.130 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:28:17.146 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:30:17.163 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:32:17.180 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:34:17.196 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:36:17.213 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:38:17.229 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:40:17.246 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:42:17.263 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:44:17.280 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:46:17.296 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:48:17.313 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:50:17.329 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:52:17.346 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:54:17.363 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:56:17.379 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 16:58:17.396 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:00:17.413 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:02:17.430 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:04:17.446 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:06:17.463 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:08:17.480 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:10:17.496 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:12:17.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:14:17.530 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:16:17.546 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:18:17.563 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:20:17.580 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:22:17.596 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:24:17.613 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:26:17.630 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:28:17.646 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:30:17.663 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:32:17.680 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:34:17.696 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:36:17.713 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:38:17.729 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:40:17.746 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:42:17.763 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:44:17.796 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:46:17.813 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:48:17.829 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:50:17.845 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:52:17.863 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:54:17.879 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:56:17.896 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 17:58:17.913 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:00:17.930 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:02:17.946 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:04:17.963 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:06:17.979 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:08:17.996 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:10:18.013 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:12:18.030 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:14:18.046 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:16:18.063 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:18:18.079 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:20:18.096 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:22:18.113 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:24:18.130 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:26:18.146 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:28:18.163 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:30:18.180 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:32:18.196 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:34:18.213 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:36:18.229 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:38:18.246 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:40:18.263 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:42:18.280 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:44:18.296 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:46:18.313 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:48:18.330 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:50:18.346 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:52:18.363 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:54:18.380 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:56:18.396 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 18:58:18.413 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:00:18.430 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:02:18.446 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:04:18.463 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:06:18.480 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:08:18.496 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:10:18.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:12:18.530 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:14:18.546 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:16:18.563 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:18:18.580 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:20:18.596 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:22:18.613 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:24:18.630 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:26:18.646 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:28:18.663 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:30:18.680 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:32:18.696 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:34:18.713 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:36:18.730 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:38:18.746 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:40:18.763 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:42:18.779 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:44:18.796 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:46:18.813 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:48:18.830 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:50:18.846 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:52:18.863 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:54:18.868 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:56:18.879 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 19:58:18.896 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:00:18.913 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:02:18.927 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:04:18.932 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:06:18.946 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:08:18.963 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:10:18.980 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:12:18.996 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:14:19.001 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:16:19.013 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:18:19.029 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:20:19.046 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:22:19.063 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:24:19.067 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:26:19.080 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:28:19.096 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:30:19.113 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:32:19.129 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:34:19.146 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:36:19.163 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:38:19.179 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:40:19.196 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:42:19.213 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:44:19.218 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:46:19.230 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:48:19.246 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:50:19.263 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:52:19.280 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:54:19.285 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:56:19.296 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 20:58:19.312 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:00:19.329 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:02:19.346 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:04:19.363 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:06:19.380 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:08:19.396 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:10:19.413 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:12:19.430 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:14:19.446 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:16:19.463 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:18:19.479 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:20:19.496 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:22:19.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:24:19.530 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:26:19.546 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:28:19.563 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:30:19.580 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:32:19.596 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:34:19.604 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:36:19.613 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:38:19.629 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:40:19.646 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:42:19.663 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:44:19.667 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:46:19.680 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:48:19.696 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:50:19.713 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:52:19.730 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:54:19.746 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:56:19.763 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 21:58:19.780 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:00:19.796 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:02:19.813 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:04:19.819 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:06:19.830 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:08:19.846 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:10:19.863 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:12:19.880 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:14:19.896 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:16:19.913 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:18:19.930 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:20:19.946 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:22:19.963 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:24:19.980 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:26:19.996 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:28:20.018 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:30:20.046 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:32:20.063 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:34:20.080 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:36:20.096 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:38:20.113 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:40:20.129 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:42:20.146 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:44:20.163 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:46:20.179 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:48:20.196 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:50:20.213 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:52:20.229 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:54:20.246 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:56:20.263 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 22:58:20.279 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:00:20.296 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:02:20.313 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:04:20.330 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:06:20.346 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:08:20.363 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:10:20.380 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:12:20.396 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:14:20.413 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:16:20.430 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:18:20.446 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:20:20.463 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:22:20.480 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:24:20.496 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:26:20.513 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:28:20.530 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:30:20.546 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:32:20.563 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:34:20.580 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:36:20.596 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:38:20.613 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:40:20.629 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:42:20.647 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:44:20.663 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:46:20.680 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:48:20.696 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:50:20.713 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:52:20.729 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:54:20.746 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:56:20.763 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 
+2021:12:28 23:58:20.779 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-172.20.117.113] 

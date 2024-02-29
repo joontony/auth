@@ -1,0 +1,196 @@
+/****************************************************************************************
+ * File Name    : LoggerAspect.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : AOP 를 이용하여 Logger 를 작성한다.
+ * 				: @Around 조건이 SP버전에 따라 다르게 동작함.
+ * Modification Log
+ * ======================================================================================
+ * Ver  	Date        Author     	Modification
+ * ======================================================================================
+   1.4.006  2021.12.16	최명호		파일생성
+****************************************************************************************/
+package org.snubi.auth.logging;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.snubi.auth.AuthConst;
+import org.snubi.auth.entity.AuthLogRaw;
+import org.snubi.auth.stat.repository.AuthLogRawRepository;
+import org.snubi.lib.code.CodeUtil;
+import org.snubi.lib.date.DateUtil;
+import org.snubi.lib.jwt.JTWClaimsUtil;
+import org.snubi.lib.jwt.JWTClaims;
+import org.snubi.lib.misc.Misc;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Component
+@Aspect
+@Slf4j
+public class LoggerAspect {
+
+	@Autowired(required = true)
+	private HttpServletRequest clsHttpServletRequest;
+
+	@Autowired
+	AuthLogRawRepository clsAuthLogRawRepository;
+
+    @Around("within(org.snubi.auth.admin.controller.*)")
+    public Object logging(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+
+    	String uri = clsHttpServletRequest.getRequestURI();
+    	String ip = clsHttpServletRequest.getRemoteAddr();
+    	Map<String,String> mapHeader = this.parseParamters(clsHttpServletRequest);
+    	Map<String,String> mapParameter = this.parseHeader(clsHttpServletRequest);
+
+    	log.info(uri);
+    	log.info(ip);
+    	log.info(mapHeader.toString());
+    	log.info(mapParameter.toString());
+
+    	Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+
+//  DESC >> 최명호 : memberController
+    //https://hirlawldo.tistory.com/42
+    @Around("within(org.snubi.auth.member.controller.*)")
+    public Object logging2(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+
+    	String uri = clsHttpServletRequest.getRequestURI();
+    	String ip = clsHttpServletRequest.getRemoteAddr();
+    	Map<String,String> mapHeader = this.parseParamters(clsHttpServletRequest);
+    	Map<String,String> mapParameter = this.parseHeader(clsHttpServletRequest);
+
+    	log.info(uri);
+    	log.info(ip);
+    	log.info(mapHeader.toString());
+    	log.info(mapParameter.toString());
+
+    	Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+//  DESC >> 최명호 : 로그인정보를 로깅한다.
+    @Around("execution(* org.snubi.auth.security.service.CustomUserDetailsServiceImplement.loadUserByUsername(..))")
+    public Object loggerForLogin(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+
+    	Map<String,String> mapHeader = this.parseHeader(clsHttpServletRequest);
+//    	DESC >> 최명호 : 로그설정
+    	try {
+			AuthLogRaw clsAuthLogRaw = AuthLogRaw.builder()
+					.category(CodeUtil.get("common-log_category-login").getStrCode())
+					.job(CodeUtil.get("common-log_job-search").getStrCode())
+					.categorySub(null)
+					.dateLog(DateUtil.getThisDate())
+					.etc(null)
+					.id(String.valueOf(clsProceedingJoinPoint.getArgs()[0]))
+					.method(clsHttpServletRequest.getMethod())
+					.request(clsHttpServletRequest.getRequestURI())
+					.target(String.valueOf(clsProceedingJoinPoint.getArgs()[0]))
+					.userAgent(mapHeader.get("user-agent"))
+					.ip(clsHttpServletRequest.getRemoteAddr())
+					.build();
+			log.info("## LOGGING ## [{}]",clsAuthLogRaw);
+			clsAuthLogRaw = clsAuthLogRawRepository.save(clsAuthLogRaw);
+		} catch (Exception Ex) {
+			Ex.printStackTrace();
+		}
+    	Object result = clsProceedingJoinPoint.proceed();
+        return result;
+    }
+
+//  TODO >> 최명호 : library 항목으로 분리해야 할듯 하다.
+	public String getIDFromToken(String token,String key) {
+		try {
+			JWTClaims clsJWTClaims = (new JTWClaimsUtil()).getClaims(token,key);
+			return clsJWTClaims.getId();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+//  TODO >> 최명호 : library 항목으로 분리해야 할듯 하다.
+	public Map<String,String> parseParamters(HttpServletRequest clsHttpServletRequest) {
+		Map<String,String> mapForResult = new HashMap<String,String>();
+		try {
+			Enumeration<String> parameterNames = clsHttpServletRequest.getParameterNames();
+			while(parameterNames.hasMoreElements()) {
+				String parameterName = (String)parameterNames.nextElement();
+				mapForResult.put(parameterName, clsHttpServletRequest.getParameter(parameterName));
+			}
+			return mapForResult;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+//  TODO >> 최명호 : library 항목으로 분리해야 할듯 하다.
+	public Map<String,String> parseHeader(HttpServletRequest clsHttpServletRequest) {
+		Map<String,String> mapForResult = new HashMap<String,String>();
+		try {
+			Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+			while(headerNames.hasMoreElements()) {
+				String headerName = (String)headerNames.nextElement();
+				mapForResult.put(headerName, clsHttpServletRequest.getHeader(headerName));
+			}
+			if(mapForResult.get("authorization") != null) {
+				String id = this.getIDFromToken(mapForResult.get("authorization").replace(AuthConst.strTokenPrefix, ""),AuthConst.strTokenPrefix);
+				if(Misc.isEmtyString(id) == false) mapForResult.put("ID",id);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return mapForResult;
+	}
+	public String getBody(HttpServletRequest request) throws IOException {
+
+        String body = null;
+        StringBuilder stringBuilder = new StringBuilder();
+        BufferedReader bufferedReader = null;
+
+        try {
+            InputStream inputStream = request.getInputStream();
+            if (inputStream != null) {
+                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                char[] charBuffer = new char[128];
+                int bytesRead = -1;
+                while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
+                    stringBuilder.append(charBuffer, 0, bytesRead);
+                }
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException ex) {
+                    throw ex;
+                }
+            }
+        }
+
+        body = stringBuilder.toString();
+        return body;
+    }
+
+}

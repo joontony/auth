@@ -1,0 +1,92 @@
+/****************************************************************************************
+ * File Name    : AuthLogRaw.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : TB_AUTH_LOG_RAW Entity
+ * Modification Log
+ * ======================================================================================
+ * Ver  Date        Author     	Modification
+ * ======================================================================================
+   1.0  2019.04.30	최명호		파일생성
+****************************************************************************************/
+package org.snubi.auth.entity;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Table;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.snubi.lib.date.DateUtil;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@Entity
+@ToString
+@NoArgsConstructor
+@Table(name = "tb_auth_log_raw")
+public class AuthLogRaw {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(nullable = false, name = "seq")
+	private long seq;
+
+	@NotNull
+	@Column(nullable = false, name = "id")
+	@Size(min = 4, max = 60)
+	private String id;
+
+	@NotNull
+	@Column(nullable = false, name = "request")
+	@Size(min = 0, max = 255)
+	private String request;
+
+	@Column(nullable = false, name = "method")
+	@Size(min = 0, max = 20)
+	private String method;
+
+	@Column(nullable = false, name = "user_agent")
+	@Size(min = 0, max = 255)
+	private String userAgent;
+
+	@NotNull
+	@Column(nullable = false, name = "date_log")
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
+	private Date dateLog;
+
+	@Builder(builderMethodName = "builder")
+	public AuthLogRaw(String id,HttpServletRequest request) {
+		this.id = id;
+		this.request = request.getRequestURI().split("/")[1];
+		this.method = request.getMethod();
+		this.userAgent = request.getHeader("User_Agent");
+	}
+	@PrePersist
+    public void prePersist() {
+        this.dateLog = DateUtil.getThisDate();
+    }
+    @PreUpdate
+    public void preUpdate() {
+
+    }
+}

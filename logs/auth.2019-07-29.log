@@ -1,0 +1,8 @@
+2019:07:29 14:39:00.344 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2019:07:29 14:39:00.344 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2019:07:29 14:39:00.344 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2019:07:29 14:39:00.441 INFO  : org.springframework.context.support.AbstractApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Fri Jul 26 16:07:54 KST 2019]; root of context hierarchy 
+2019:07:29 14:39:00.450 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2019:07:29 14:39:00.626 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2019:07:29 14:39:00.666 INFO  : org.springframework.jmx.export.MBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2019:07:29 14:39:00.691 INFO  : org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 

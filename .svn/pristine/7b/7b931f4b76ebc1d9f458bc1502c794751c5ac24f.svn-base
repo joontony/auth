@@ -1,0 +1,61 @@
+/****************************************************************************************
+ * File Name    : LoggerAspect.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  :
+ * Modification Log
+ * ======================================================================================
+ * Ver  	Date        Author     	Modification
+ * ======================================================================================
+   1.4.006  2021.12.16	최명호		파일생성
+****************************************************************************************/
+package org.snubi.auth.logging;
+
+import java.util.Enumeration;
+import javax.servlet.http.HttpServletRequest;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.snubi.auth.AuthConst;
+import org.snubi.lib.jwt.JTWClaimsUtil;
+import org.snubi.lib.jwt.JWTClaims;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import lombok.extern.slf4j.Slf4j;
+
+@Aspect
+@Component
+@Slf4j
+public class LoggerAspect {
+
+	@Autowired(required = true)
+	private HttpServletRequest clsHttpServletRequest;
+
+    @Around("within(org.snubi.auth.admin.controller.*)")
+    public Object logging(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+
+    	log.info("####################### >>>>>>>>>>>>>> ");
+    	String strHTTPHeader = clsHttpServletRequest.getHeader("authorization").replace(AuthConst.strTokenPrefix, "");
+		String strKey = AuthConst.strSecrete;
+		JWTClaims clsJWTClaims = (new JTWClaimsUtil()).getClaims(strHTTPHeader,strKey);
+		log.info("####################### >>>>>>>>>>>>>> " + clsJWTClaims.getId());
+    	Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+    	while(headerNames.hasMoreElements()) {
+    		String headerName = (String)headerNames.nextElement();
+    		System.out.println("" + headerName + ":" + clsHttpServletRequest.getHeader(headerName));
+    	}
+
+    	Enumeration<String> params = clsHttpServletRequest.getParameterNames();
+    	while(params.hasMoreElements()){
+    		String paramName = params.nextElement();
+    		System.out.println("Parameter Name - "+paramName+", Value - "+clsHttpServletRequest.getParameter(paramName));
+    	}
+
+    	 Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+
+}

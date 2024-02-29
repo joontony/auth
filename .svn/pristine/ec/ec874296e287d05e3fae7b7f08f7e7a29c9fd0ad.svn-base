@@ -1,0 +1,18 @@
+## 로그 수집 테이블 변경
+
+
+ALTER TABLE auth.tb_auth_log_raw ADD ip varchar(20) NULL COMMENT '접속아이피';
+ALTER TABLE auth.tb_auth_log_raw ADD target varchar(20) NULL COMMENT '정보주체';
+ALTER TABLE auth.tb_auth_log_raw ADD category varchar(20) NULL COMMENT '자료구분';
+ALTER TABLE auth.tb_auth_log_raw ADD category_sub varchar(20) NULL COMMENT '세부정보';
+ALTER TABLE auth.tb_auth_log_raw ADD job varchar(20) NULL COMMENT '업무구분';
+ALTER TABLE auth.tb_auth_log_raw ADD etc varchar(500) NULL COMMENT '기타';
+
+## 코드 추가
+
+TB_CODE_CATEGORY
+TB_CODE
+TB_CODE_TAG
+
+
+

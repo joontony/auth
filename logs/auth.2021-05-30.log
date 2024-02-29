@@ -1,0 +1,8 @@
+2021:05:30 08:48:52.175 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-192.168.0.79] 
+2021:05:30 08:50:52.235 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-192.168.0.79] 
+2021:05:30 08:52:52.301 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-192.168.0.79] 
+2021:05:30 08:54:52.418 INFO  : org.snubi.auth.stat.service.implement.AuthLogRawServiceImplement : Host [DESKTOP-VJ7PMMN-192.168.0.79] 
+2021:05:30 08:55:29.312 INFO  : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2021:05:30 08:55:29.316 INFO  : org.springframework.context.support.AbstractApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Fri May 07 08:54:53 KST 2021]; root of context hierarchy 
+2021:05:30 08:55:29.377 INFO  : org.springframework.jmx.export.MBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2021:05:30 08:55:29.385 INFO  : org.springframework.orm.jpa.AbstractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 

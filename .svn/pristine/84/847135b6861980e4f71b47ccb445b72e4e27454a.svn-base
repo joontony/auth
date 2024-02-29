@@ -1,0 +1,212 @@
+/**********************************************************************************************************
+ * File Name    : AuthJWTAuthenticationFilter.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : milliseconds 참조 : https://www.calculateme.com/time/days/to-milliseconds/10
+ * 				: 로그인 URL 을 변경하고 싶다면. AuthJWTAuthenticationFilter 내
+ * 				  setRequiresAuthenticationRequestMatcher(new AntPathRequestMatcher("/your/login/url"));
+ * Modification Log
+ * ======================================================================================================
+ * Ver  	Date        Author     Modification
+ * ======================================================================================================
+   1.0  	2018.04.06  최명호    	Create
+   1.1					장태훈 		Email login 변경
+   1.2		2019.06.28	최명호		로그인시 Device-ID 를 수정함.
+   1.3		2019.07.04	최명호		로그인시 device-id 업데이트 로직수정함.
+   1.4		2019.1209	최명호		Content-Type 비교시 공백, 대소문자무시
+   1.5		2020.09.10	최명호 		/login 을 통해 요청되는 로그인 요청시 system_code,system_version 을 추가함
+   1.6		2020.09.14	최명호 		기존 로그인 규격 / 신규 규격을 처리함 (SystemTypoeCode 유무에 따라)
+   1.4.004	2021.11.15	최명호 		암화화 알고리즘애 따라  authenticate 방식을 구분한다.
+**********************************************************************************************************/
+package org.snubi.auth.security.filter;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.snubi.auth.AuthConst;
+import org.snubi.auth.entity.AuthLogRaw;
+import org.snubi.auth.entity.AuthMemberDevice;
+import org.snubi.auth.entity.AuthMemberSet;
+import org.snubi.auth.member.repository.AuthMemberDeviceRepository;
+import org.snubi.auth.member.repository.AuthMemberSetRepository;
+import org.snubi.auth.packet.PacketAuthGetToken;
+import org.snubi.auth.security.AuthSecurityMember;
+import org.snubi.auth.stat.StatMakeRaw;
+import org.snubi.lib.crypto.AES256Util;
+import org.snubi.lib.crypto.SHA256Util;
+import org.snubi.lib.misc.Misc;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@SuppressWarnings({"unchecked","rawtypes"})
+public class AuthJWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+
+	@Autowired	private AuthMemberSetRepository 	clsAuthMemberSetRepository		;
+	@Autowired	private AuthMemberDeviceRepository 	clsAuthMemberDeviceRepository	;
+	@Autowired	private StatMakeRaw 				clsStatMakeRaw					;
+				private AuthenticationManager 		authenticationManager			;
+
+    public AuthJWTAuthenticationFilter(AuthenticationManager authenticationManager, ApplicationContext clsApplicationContext) {
+        this.authenticationManager 			= authenticationManager;
+        this.clsAuthMemberSetRepository 	= clsApplicationContext.getBean(AuthMemberSetRepository.class);
+        this.clsAuthMemberDeviceRepository 	= clsApplicationContext.getBean(AuthMemberDeviceRepository.class);
+        this.clsStatMakeRaw 				= clsApplicationContext.getBean(StatMakeRaw.class);
+    }
+//	DESC >> 변경된 API버전을 반영한다. 버전이 반영된 경우 회원정보테이블의 구조는 기존과 구별된다
+    @Override
+    public Authentication attemptAuthentication(HttpServletRequest request,HttpServletResponse response) throws AuthenticationException {
+		String strId 		 		= "";
+		String strEmail 	 		= "";
+		String strPassword 	 		= "";
+		String strSystemCode 		= "";
+		String strDeviceId 	 		= "";
+		String strOsCode	 		= "";
+		String strSystemTypeCode 	= "";
+		String strSystemTypeVersion = "";
+    	PacketAuthGetToken clsPacketAuthGetToken = new PacketAuthGetToken();
+    	clsPacketAuthGetToken.createReqestMap();
+    	AuthMemberSet clsAuthMember = null;
+        try {
+        	log.info("Login : content-type [{}]",request.getHeader("Content-Type"));
+        	if(request.getHeader("Content-Type").contains("application/json") == true) {
+//            	DESC >> JSON 으로 요청되는 경우 > 요청된 Stream 을 AuthMemberSet 으로 변환한다.
+				StringBuffer stringBuffer = new StringBuffer();
+				String line = null;
+				while ((line = request.getReader().readLine()) != null) stringBuffer.append(line);
+	            clsAuthMember = ( new ObjectMapper()).readValue(stringBuffer.toString(), AuthMemberSet.class);
+	            strId 					= clsAuthMember.getId				();
+	            strEmail 				= clsAuthMember.getEmail			();
+		        strPassword 			= clsAuthMember.getPassword			();
+		        strSystemCode 			= clsAuthMember.getSystemCode		();
+	        	strDeviceId 			= clsAuthMember.getDeviceId			();
+	        	strOsCode				= clsAuthMember.getOsCode			();
+	        	strSystemTypeCode		= clsAuthMember.getSystemTypeCode	();
+	        	strSystemTypeVersion	= clsAuthMember.getSystemTypeVersion();
+	        } else {
+//	        	DESC >> Form 으로 요청되는 경우
+//	        	TODO >> 최명호 : 사용되지 않는듯 같음. 확인후에 삭제해야 함.
+	        	strId 					= request.getParameter(AuthConst.strRequestID				);
+	        	strEmail 				= request.getParameter(AuthConst.strRequestEmail			);
+	        	strPassword 			= request.getParameter(AuthConst.strRequestPassword			);
+	        	strSystemCode 			= request.getParameter(AuthConst.strRequestSystemCode		);
+	        	strDeviceId 			= request.getParameter(AuthConst.strRequestDeviceId			);
+	        	strOsCode 				= request.getParameter(AuthConst.strRequestOsCode			);
+	        	strSystemTypeCode		= request.getParameter(AuthConst.strRequestSystemTypeCode	);
+	        	strSystemTypeVersion	= request.getParameter(AuthConst.strRequestSystemTypeVersion);
+	        }
+//	        DESC >> 아이디가 아닌 email로 로그인 요청시 검색을 통해 아이디를 설정한다.
+	        AuthMemberSet clsAuthMemberSet = null;
+        	if(strEmail != null && Misc.isEmtyString(strId) == true) {
+//        		DESC >> 최명호 : 아이디없이 Email 이 수신된 경우.
+        		clsAuthMemberSet = clsAuthMemberSetRepository.findOneByEmail(strEmail);
+	        	if(clsAuthMemberSet == null) {
+	        		log.error("해당 이메일[{}]을 회원정보에서 찾을 수 없습니다 ",strEmail);
+	        		throw new Exception("error");
+	        	}
+	        	strId = clsAuthMemberSet.getId();
+	        	log.info("검색된 아이디 [{}] by 이메일 [{}]",strId,strEmail);
+	        }
+        	clsAuthMemberSet = clsAuthMemberSetRepository.findById(strId);
+        	if(clsAuthMemberSet == null) {
+        		log.error("아이디[{}]를 찾을 수 없습니다.",strId);
+        		throw new Exception("error");
+        	}
+//        	DESC >> 최명호 : 암호화 알고리즘에 따라 전달 받은 비밀번호를 변경해야 함.
+        	strPassword = clsAuthMemberSet.isDigested() == false ? (new AES256Util(AuthConst.strAES256Key)).aesEncode(strPassword) : SHA256Util.encrypt(strPassword);
+        	log.info("Login : email : [{}], id : [{}], digested : [{}], pw : [{}]",strEmail,strId,clsAuthMemberSet.isDigested() ,strPassword);
+//        	DESC >> 사용자정보를 조회하고 인증을 진행한다.
+        	Authentication clsAuthentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(strId,strPassword,new ArrayList<>()));
+        	log.info("Login : isAuthenticated [{}]",clsAuthentication.isAuthenticated() );
+        	if(clsAuthentication.isAuthenticated() == true) {
+//	        	DESC >> 디바이스정보를 전달받았다면 DEVICE_ID를 업데이트함. 이 모듈에는 service가 없음.Transaction 이 필요없음.
+        		if(Misc.isEmtyString(strSystemCode) == false && Misc.isEmtyString(strDeviceId) == false && Misc.isEmtyString(strOsCode) == false) {
+        			log.info("Login : device [OS : {}, System : {}, device : {},Systemn-Type : {}, Version : {}]",strOsCode,strSystemCode,strDeviceId,strSystemTypeCode,strSystemTypeVersion);
+        			try {
+//    					DESC >> 자료를 업데이트 하기 위해 이전 자료유무를 확인함.
+            			AuthMemberDevice clsAuthMemberDevice = clsAuthMemberDeviceRepository.findByIdAndOsCodeAndSystemCodeAndSystemTypeCode(strId,strOsCode,strSystemCode,strSystemTypeCode);
+            			if(clsAuthMemberDevice != null) {
+//            				DESC >> 최명호 : 기존정보가 있다면디바이스정보 업데이트
+//            				log.info("update AuthMemberDevice : [{}]", clsAuthMemberDevice);
+            				clsAuthMemberDevice.setDeviceId(strDeviceId);
+            				clsAuthMemberDevice.setSystemTypeCode(strSystemTypeCode);
+            				clsAuthMemberDevice.setSystemTypeVersion(strSystemTypeVersion);
+            			} else {
+//            				DESC >> 최명호 : 기존정보가 없다면. 신규등록
+//            				log.info("insert AuthMemberDevice : [{}]", clsAuthMemberDevice);
+            				clsAuthMemberDevice = AuthMemberDevice.builder()
+                					.id(strId)
+                					.mobile(clsAuthMemberSet.getMobile())
+                					.deviceId(strDeviceId)
+                					.osCode(strOsCode)
+                					.systemCode(strSystemCode)
+                					.systemTypeCode(strSystemTypeCode)
+                					.systemTypeVersion(strSystemTypeVersion)
+                					.build();
+            			}
+            			clsAuthMemberDevice = clsAuthMemberDeviceRepository.save(clsAuthMemberDevice);
+            			log.info("persist AuthMemberDevice [{}]", clsAuthMemberDevice);
+        			} catch(Exception Ex) {
+        				log.info("failed to update device-info.");
+//        				Ex.printStackTrace();
+        			}
+        		}
+        		return clsAuthentication;
+        	}
+	    } catch (Exception Ex) {
+	    	clsPacketAuthGetToken.set(null,"Incorrect User Information");
+	    	try {
+//	    		DESC >> 최명호 : 결과를 packet 를 통해 전달한다.
+				response.getWriter().write(clsPacketAuthGetToken.respone());
+			} catch (IOException Ee) {
+				log.error("응답정보에 오류정보를 기록 할 수 없습니다.");
+			}
+	    	log.error("사용자정보오류");
+	    }
+		return null;
+    }
+    @Override
+    protected void successfulAuthentication(HttpServletRequest request,HttpServletResponse response,FilterChain chain,Authentication auth) throws IOException, ServletException {
+    	AuthSecurityMember clsAuthSecurityMember = (AuthSecurityMember) auth.getPrincipal();
+        String token = Jwts.builder().setClaims(clsAuthSecurityMember.getClaims()).signWith(SignatureAlgorithm.HS512, AuthConst.strSecrete.getBytes()).compact();
+        response.addHeader(AuthConst.strResponseAuthHeader, AuthConst.strResponseAuthToken + " " + token);
+        PacketAuthGetToken clsPacketAuthGetToken = new PacketAuthGetToken();
+        clsPacketAuthGetToken.createReqestMap();
+        try {
+        	clsPacketAuthGetToken.set(String.class,(String)token,RequestMethod.POST);
+		} catch (Exception Ex) {
+			clsPacketAuthGetToken.set(null,"Incorrect User Information");
+			log.error("패킷설정오류");
+		}
+        try {
+        	System.out.println("------------------------------------");
+			System.out.println(request);
+			System.out.println("------------------------------------");
+
+	        clsStatMakeRaw.make(AuthLogRaw.builder().id(clsAuthSecurityMember.getClsAuthMember().getId()).request(request).build());
+        } catch(Exception Ex) {
+        	log.error("접속로그저장오류");
+        }
+        response.getWriter().write(clsPacketAuthGetToken.respone());
+    }
+}

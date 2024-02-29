@@ -1,0 +1,69 @@
+#****************************************************************************************
+# * File Name    : config.properties
+# * Function     :
+# * Author       : mh.choi
+# * Tester       :
+# * Page         :
+# * Target       :
+# * Description  :
+# * Modification Log
+# * =====================================================================================
+# * Ver  Date        Author     Modification
+# * =====================================================================================
+#   1.0  2018.05.28  mh.choi     Create
+#***************************************************************************************
+server.ssl.enabled=false
+security.require-ssl=${server.ssl.enabled}
+server.ssl.key-store=C:/HAP/SSL/ssl-2019/20191226-124013-_wildcard_snubi_org.pfx/_wildcard_snubi_org.pfx
+server.ssl.key-store-password=06753
+server.ssl.key-store-type=PKCS12
+server.ssl.key-alias=*.snubi.org
+oauth_access_token_name=access_token
+#***************************************************************************************
+# ùò
+#***************************************************************************************
+packet.response.code=200
+packet.code.name=code
+packet.token.name=token
+packet.data.name=data
+packet.message.name=message
+packet.error.code.vals=error
+packet.error.message.vals=error
+packet.success.code.vals=success
+packet.success.message.vals=success
+#***************************************************************************************
+#
+#***************************************************************************************
+http.request.parameter.id=id
+http.request.parameter.password=password
+http.request.parameter.device-id=deviceId
+http.request.parameter.os-code=osCode
+http.request.parameter.system-code=systemCode
+http.request.parameter.system-type-code=systemTypeCode
+http.request.parameter.system-type-version=systemTypeVersion
+#***************************************************************************************
+#
+#***************************************************************************************
+http.response.auth.header=Authorization
+http.response.auth.token=Bearer
+http.response.auth.claims.sub=sub
+http.response.auth.claims.ext=exp
+http.response.auth.claims.name=name
+http.response.auth.claims.id=id
+http.response.auth.claims.organization=organization
+http.response.auth.claims.department=department
+http.response.auth.claims.title=title
+http.response.auth.claims.issue=issue
+http.response.auth.claims.deviceid=device-id
+#***************************************************************************************
+#
+#***************************************************************************************
+sms.request.url = https://develop.snubi.org:19101/message/sms
+code.service.url = http://192.168.0.72:19101/platform/code/category/in?system=bioemr,system,auth,common,xnet,avatar
+http.request.parameter.email = xanitus@nate.com
+#***************************************************************************************
+#
+#***************************************************************************************
+auth.log.debug = false
+auth.run.private = false
+auth.run.private.auth = xxxx

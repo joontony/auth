@@ -1,0 +1,27 @@
+/****************************************************************************************
+ * File Name    : AuthLogRawRepository.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  :
+ * Modification Log
+ * ======================================================================================
+ * Ver  Date        Author     	Modification
+ * ======================================================================================
+   1.0 	2018.04.30	최명호		파일생성
+****************************************************************************************/
+package org.snubi.auth.stat.repository;
+
+import org.snubi.auth.entity.AuthLogRaw;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AuthLogRawRepository extends JpaRepository<AuthLogRaw, Long> {
+
+//	@Modifying
+//    @Transactional
+//	@Query("update AuthMemberDevice c set c.deviceId = :deviceId, c.updater = :updater, c.updated = :updated  where c.id = :id and c.systemCode = :systemCode")
+//	void deleteByQueryWithYMD(int yy, int mm, int dd);
+
+}

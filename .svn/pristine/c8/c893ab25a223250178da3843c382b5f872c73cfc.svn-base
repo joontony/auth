@@ -1,0 +1,105 @@
+/****************************************************************************************
+ * File Name    : AuthLogRawServiceImplement.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  :
+ * Modification Log
+ * ======================================================================================
+ * Ver  Date        Author     	Modification
+ * ======================================================================================
+   1.0  2019.04.30	최명호		파일생성
+   1.1  2019.11.18	최명호		오라클에 설치시 통계를 사용하지 않는다.
+****************************************************************************************/
+package org.snubi.auth.stat.service.implement;
+
+import java.net.InetAddress;
+import java.util.List;
+import java.util.Map;
+
+import javax.persistence.EntityManager;
+
+import org.snubi.auth.entity.AuthLogRaw;
+import org.snubi.auth.entity.AuthStatDD;
+import org.snubi.auth.stat.repository.AuthLogRawRepository;
+import org.snubi.auth.stat.repository.AuthStatDDRepository;
+import org.snubi.auth.stat.service.AuthLogRawService;
+import org.snubi.lib.date.DateUtil;
+import org.snubi.lib.misc.Misc;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class AuthLogRawServiceImplement implements AuthLogRawService {
+
+	@Autowired
+	AuthLogRawRepository clsAuthLogRawRepository;
+
+	@Autowired
+	AuthStatDDRepository clsAuthStatDDRepository;
+
+	@Autowired
+	EntityManager entityManager;
+
+	@Override
+	public AuthLogRaw save(AuthLogRaw clsParameter) throws Exception {
+		return clsAuthLogRawRepository.save(clsParameter);
+	}
+	@Override
+	public boolean state(Map<String, Object> malParameter) throws Exception {
+		log.info("Host [{}-{}]",InetAddress.getLocalHost().getHostName(),InetAddress.getLocalHost().getHostAddress());
+		if(Misc.isEqualStringWithoutCase("develop.snubi.org",InetAddress.getLocalHost().getHostName()) == false) {
+			return false;
+		}
+		String thisDay = DateUtil.getThisDateString("yyyy-MM-dd");
+		String prevDay = DateUtil.getDateCalculated(DateUtil.getThisDate(), -1, "yyyy-MM-dd");
+		StringBuffer bufferSql = new StringBuffer();
+
+		bufferSql.append("SELECT 	count(c.seq) as total,								");
+		bufferSql.append("			m.genderCode as gender,								");
+		bufferSql.append("			ceil((to_days(now())-to_days(m.birth))/365) as age,	");
+		bufferSql.append("			date_format(c.dateLog,'%Y') as stat_yy,				");
+		bufferSql.append("			date_format(c.dateLog,'%m') as stat_mm,				");
+		bufferSql.append("			date_format(c.dateLog,'%d') as stat_dd				");
+		bufferSql.append("  FROM 	AuthLogRaw c, AuthMember m 							");
+		bufferSql.append(" WHERE 	c.id = m.id 										");
+		bufferSql.append("   AND 	c.dateLog >= '").append(prevDay).append(" 00:00:00'	");
+		bufferSql.append("   AND 	c.dateLog <= '").append(thisDay).append(" 23:59:59'	");
+		bufferSql.append("   AND 	m.birth is not null									");
+		bufferSql.append(" GROUP	BY 													");
+		bufferSql.append(" 			m.genderCode,										");
+		bufferSql.append("			ceil((to_days(now())-to_days(m.birth))/365),		");
+		bufferSql.append("			date_format(c.dateLog,'%Y'),						");
+		bufferSql.append("			date_format(c.dateLog,'%m'),						");
+		bufferSql.append("			date_format(c.dateLog,'%d')							");
+
+		try {
+			String[] arrThisDy 	= thisDay.split("-");
+			String[] arrPrevDay = prevDay.split("-");
+			clsAuthStatDDRepository.deleteByQueryWithYMD(Long.parseLong(arrThisDy[0]),Long.parseLong(arrThisDy[1]),Long.parseLong(arrThisDy[2]));
+			clsAuthStatDDRepository.deleteByQueryWithYMD(Long.parseLong(arrPrevDay[0]),Long.parseLong(arrPrevDay[1]),Long.parseLong(arrPrevDay[2]));
+			@SuppressWarnings("unchecked")
+			List<Object[]> listObjects  = entityManager.createQuery(bufferSql.toString()).getResultList();
+			for(Object[] objects : listObjects) {
+	        	AuthStatDD clsAuthStatDD = new AuthStatDD();
+	        	clsAuthStatDD.setCategory	("REQ"										 );
+	        	clsAuthStatDD.setTotal		(Long.parseLong((String.valueOf(objects[0]))));
+	        	clsAuthStatDD.setGender		(			 	(String.valueOf(objects[1])) );
+	        	clsAuthStatDD.setAge		(Long.parseLong((String.valueOf(objects[2]))));
+	        	clsAuthStatDD.setStatYy		(Long.parseLong((String.valueOf(objects[3]))));
+	        	clsAuthStatDD.setStatMm		(Long.parseLong((String.valueOf(objects[4]))));
+	        	clsAuthStatDD.setStatDd		(Long.parseLong((String.valueOf(objects[5]))));
+	        	clsAuthStatDDRepository.save(clsAuthStatDD);
+			}
+		} catch(Exception Ex) {
+			log.error("통계처리오류");
+			return false;
+		}
+		return true;
+	}
+}

@@ -1,0 +1,163 @@
+/**************************************************************************************** 
+ * File Name    : WithAuthController.java
+ * Function     : 
+ * Author       : mh.choi
+ * Tester       : 
+ * Page         : 
+ * Target       : 
+ * Description  : 
+ * Modification Log
+ * =============================================================== 
+ * Ver  Date        Author     	Modification
+ * ===============================================================
+   1.0  2018.06.15	mh.choi		create
+****************************************************************************************/
+package org.snubi.auth.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.snubi.auth.AuthConst;
+import org.snubi.auth.entity.AuthLogRaw;
+import org.snubi.auth.entity.CommonTrackInterface;
+import org.snubi.auth.entity.PagingWrapper;
+import org.snubi.auth.stat.StatMakeRaw;
+import org.snubi.lib.code.CodeUtil;
+import org.snubi.lib.date.DateUtil;
+import org.snubi.lib.jwt.JTWClaimsUtil;
+import org.snubi.lib.jwt.JWTClaims;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.RestController;
+
+//import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
+
+@RestController
+@Slf4j
+public class WithAuthController<T> {
+	
+	@Autowired
+	protected HttpServletRequest request;
+
+	@Autowired
+	protected StatMakeRaw clsStatMakeRaw;
+			 
+	private JWTClaims getClaims(String ... arrString) throws Exception {
+		JWTClaims clsJWTClaims = new JWTClaims();
+		try {
+			String strHTTPHeader = request.getHeader("authorization").replace(AuthConst.strTokenPrefix, "");
+			String strKey = AuthConst.strSecrete;
+			clsJWTClaims = (new JTWClaimsUtil()).getClaims(strHTTPHeader,strKey);
+			try {
+		        clsStatMakeRaw.make(AuthLogRaw.builder().id(clsJWTClaims.getId()).request(request).build());
+	        } catch(Exception Ex) {
+	        	log.info("## Excecption in getClaims(inner) [{}]",Ex.toString());
+	        }						
+			return clsJWTClaims;
+		} catch(Exception Ex) {
+			log.info("## Excecption in getClaims(outer) [{}]",Ex.toString());
+			clsJWTClaims.setId("NOINFO");
+			return clsJWTClaims;
+		}
+	}
+	protected boolean isAllSelectableBioemr() {
+		try {
+			JWTClaims clsJWTClaims = this.getClaims();
+			return (CodeUtil.get("bioemr-role-manager").getStrCode().equals(clsJWTClaims.getAuth("bioemr")));
+		} catch(Exception Ex) {
+			log.info("## Excecption in isAllSelectableBioemr [{}]",Ex.toString());
+		}
+		return false;
+	}
+	protected boolean isAllSelectable() {
+		try {
+			JWTClaims clsJWTClaims = this.getClaims();
+			return 	(	CodeUtil.get("auth-role-admin").getStrCode().equals(clsJWTClaims.getAuth("auth")) 
+					|| 	CodeUtil.get("auth-role-staff").getStrCode().equals(clsJWTClaims.getAuth("auth")));
+		} catch(Exception Ex) {
+			log.info("## Excecption in isAllSelectable [{}]",Ex.toString());
+		}
+		return false;
+	}
+	protected boolean isAllCreatable()  {
+		try {
+			JWTClaims clsJWTClaims = this.getClaims();
+			return CodeUtil.get("auth-role-admin").getStrCode().equals(clsJWTClaims.getAuth("auth"));
+		} catch(Exception Ex) {
+			log.info("## Excecption in isAllCreatable [{}]",Ex.toString());
+		}
+		return false;
+	}
+	protected boolean isAllUpdatable(String strId)  {
+		try {
+			JWTClaims clsJWTClaims = this.getClaims();
+			return (CodeUtil.get("auth-role-admin").getStrCode().equals(clsJWTClaims.getAuth("auth"))
+					|| clsJWTClaims.getId().equals(strId));
+		} catch(Exception Ex) {
+			log.info("## Excecption in isAllUpdatable [{}]",Ex.toString());
+		}
+		return false;
+	}
+	protected boolean isOnlyOwn(String strId)  {
+		try {
+			JWTClaims clsJWTClaims = this.getClaims();
+			return clsJWTClaims.getId().equals(strId);
+		} catch(Exception Ex) {
+			log.info("## Excecption in isOnlyOwn [{}]",Ex.toString());
+		}
+		return false;
+	}
+	protected boolean setCommonTrack(CommonTrackInterface intfCommomTrack, String id) throws Exception {
+		JWTClaims clsJWTClaims = this.getClaims();
+		clsJWTClaims.setId(id);
+		return setCommonTrack(intfCommomTrack);
+	}
+	protected boolean setCommonTrack(List<CommonTrackInterface> listCommomTrack, String id) throws Exception {
+		JWTClaims clsJWTClaims = this.getClaims();
+		clsJWTClaims.setId(id);
+		return setCommonTrack(listCommomTrack);
+	}
+	protected boolean setCommonTrack(CommonTrackInterface intfCommomTrack,String ... arrString) throws Exception {
+		JWTClaims clsJWTClaims = this.getClaims();
+		if(arrString.length > 0) {
+			clsJWTClaims.setId(arrString[0]);
+		}
+		intfCommomTrack.setCreator(clsJWTClaims.getId());
+		intfCommomTrack.setUpdater(clsJWTClaims.getId());
+		intfCommomTrack.setUpdated(DateUtil.getThisSQLDate());
+		intfCommomTrack.setCreated(DateUtil.getThisSQLDate());
+		intfCommomTrack.setValid(CodeUtil.get("bioemr-activate-active").getStrCode());
+		return true;
+	}
+	protected boolean setCommonTrack(List<CommonTrackInterface> listCommomTrack,String ... arrString) throws Exception {
+		JWTClaims clsJWTClaims = this.getClaims();
+		if(arrString.length > 0) {
+			clsJWTClaims.setId(arrString[0]);
+		}		
+		for(CommonTrackInterface intfCommomTrack : listCommomTrack) {
+			intfCommomTrack.setCreator(clsJWTClaims.getId());
+			intfCommomTrack.setUpdater(clsJWTClaims.getId());
+			intfCommomTrack.setUpdated(DateUtil.getThisSQLDate());
+			intfCommomTrack.setCreated(DateUtil.getThisSQLDate());
+			intfCommomTrack.setValid(CodeUtil.get("bioemr-activate-active").getStrCode());
+		}
+		return true;
+	}
+	protected boolean updateCommonTrack(CommonTrackInterface intfCommomTrack) throws Exception {
+		JWTClaims clsJWTClaims = this.getClaims();	
+		intfCommomTrack.setUpdater(clsJWTClaims.getId());
+		intfCommomTrack.setUpdated(DateUtil.getThisSQLDate());
+		return true;
+	}
+	protected PagingWrapper<T> setPagingWrapper(Page<T> pageT) throws Exception {
+		PagingWrapper<T> clsPagingWrapper = new PagingWrapper<T>();
+		clsPagingWrapper.setNumber(pageT.getNumber());
+		clsPagingWrapper.setNumberOfElements(pageT.getNumberOfElements());
+		clsPagingWrapper.setTotalElements(pageT.getTotalElements());
+		clsPagingWrapper.setTotalPage(pageT.getTotalPages());
+		clsPagingWrapper.setListData(pageT.getContent());
+		return clsPagingWrapper;
+	}
+}

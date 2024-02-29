@@ -1,0 +1,459 @@
+/****************************************************************************************
+ * File Name    : AuthMemberController.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : member controller
+ * Modification Log
+ * ======================================================================================
+ * Ver  Date        Author     Modification
+ * ======================================================================================
+   	1.0  	2018.04.06  최명호    	Create
+   	1.0  	2018.04.10  최명호    	@CrossOrigin 설정
+   	1.0  	2018.07.30  최명호   	각 시스템별 Auth내 권한 설정
+   	1.1  	2018.07.30  장태훈		이메일등올 검색 API 추가
+   	1.2  	2019.04.29  최명호   	기존 API 에서 권한을 삭제하지 않고, 의사정보를 조회하는
+   									아바타 아이디와 연결된 기관코드와 의사정보 검색 API 추가
+   	1.3  	2019.04.29  최명호    	요청시 통계자료를 생성한다.
+   	1.3  	2019.06.13  최명호    	가입시 중복되는 이메일이 없도록 한다.
+   	1.4		2019.07.02	최명호		권한이 없어도  아이디 리스트를 전달하도록 한다.
+   	1.5		2020.09.10 	최명호		url 에 device>system_type_code,system_type_version 을 반영
+									기존 avatar / xnet 의 경우는 해당 항목이 없음
+	1.4.004	2021.11.15	최명호 		비밀번호 찾기 시 신규비밀번호로 설정되도록 한다.
+	1.4.004	2021.11.16	최명호 		회원정보 수정시 미밀번호 알고리즘을 설정한다.
+****************************************************************************************/
+package org.snubi.auth.member.controller;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.security.auth.message.config.AuthConfig;
+
+import org.bouncycastle.jcajce.provider.digest.SHA256;
+import org.snubi.auth.AuthConst;
+import org.snubi.auth.controller.WithAuthController;
+import org.snubi.auth.entity.AuthMember;
+import org.snubi.auth.entity.AuthMemberDevice;
+import org.snubi.auth.entity.AuthMemberRole;
+import org.snubi.auth.entity.AuthMemberSet;
+import org.snubi.auth.entity.AuthRoleMap;
+import org.snubi.auth.entity.AuthRoleMapElements;
+import org.snubi.auth.entity.PagingWrapper;
+import org.snubi.auth.member.repository.AuthMemberRepository;
+import org.snubi.auth.member.repository.AuthMemberSetRepository;
+import org.snubi.auth.member.repository.AuthRoleMapRepository;
+import org.snubi.auth.member.service.AuthMemberService;
+import org.snubi.auth.member.service.AuthMemberSpecification;
+import org.snubi.auth.member.service.implement.AuthMemberServiceImplement;
+import org.snubi.auth.packet.AdminPacket;
+import org.snubi.auth.packet.PacketAuthToken;
+import org.snubi.lib.code.CodeUtil;
+import org.snubi.lib.crypto.AES256Util;
+import org.snubi.lib.crypto.SHA256Util;
+import org.snubi.lib.date.DateUtil;
+import org.snubi.lib.message.SMSUtil;
+import org.snubi.lib.misc.Misc;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import lombok.extern.slf4j.Slf4j;
+
+@SuppressWarnings({"unchecked","rawtypes","unused"})
+@RestController
+@Slf4j
+public class AuthMemberController extends WithAuthController {
+
+	@Autowired	AuthMemberService 			clsAuthMemberService		;
+	@Autowired	AuthMemberRepository 		clsAuthMemberRepository		;
+	@Autowired	AuthMemberSetRepository 	clsAuthMemberSetRepository	;
+	@Autowired	AuthRoleMapRepository 		clsAuthRoleMapRepository	;
+
+	static List<String> listAvailableXNetTypeList = new ArrayList<String>();
+	static List<String> listAvailableAvatarTypeList = new ArrayList<String>();
+	static {
+		try {
+			listAvailableAvatarTypeList = Arrays.asList(CodeUtil.get("avatar-type-beans").getStrCode(),CodeUtil.get("avatar-type-fit").getStrCode(),CodeUtil.get("avatar-type-health").getStrCode());
+			listAvailableXNetTypeList = Arrays.asList(CodeUtil.get("xnet-type-dnet").getStrCode(),CodeUtil.get("xnet-type-rnet").getStrCode(),CodeUtil.get("xnet-type-anet").getStrCode());
+		} catch (Exception Ex) {
+			log.debug("## AuthMemberController ## init 오류 ");
+		}
+	}
+//	DESC >> 권한 설정
+	private AuthRoleMap setAuthRoleMap(AuthMemberSet clsAuthMemberSet) throws Exception {
+		AuthRoleMap clsAuthRoleMap = new AuthRoleMap();
+		try {
+			clsAuthRoleMap = clsAuthRoleMapRepository.findOneBySystemCodeAndRoleCode
+															(clsAuthMemberSet.getListAuthMemberRole().get(0).getSystemCode()
+															,clsAuthMemberSet.getListAuthMemberRole().get(0).getRoleCode());
+			if(clsAuthRoleMap.getListAuthRoleMapElements().size() == 0) {
+				throw new Exception ("권한정보가 설정되어 있지 않습니다.");
+			} else {
+				for(AuthRoleMapElements clsAuthRoleMapElements : clsAuthRoleMap.getListAuthRoleMapElements()) {
+					AuthMemberRole clsAuthMemberRole = new AuthMemberRole();
+					clsAuthMemberRole.setId(clsAuthMemberSet.getId());
+					clsAuthMemberRole.setSystemCode(clsAuthRoleMapElements.getSystemCode());
+					clsAuthMemberRole.setRoleCode(clsAuthRoleMapElements.getRoleCode());
+					clsAuthMemberSet.addListAuthMemberRole(clsAuthMemberRole);
+				}
+			}
+		} catch(Exception Ex) {
+			String defaultRoleCode = CodeUtil.get("auth-role-user").getStrCode();
+			String authSystenCode = CodeUtil.get("system-name-auth").getStrCode();
+			AuthMemberRole clsAuthMemberRole = new AuthMemberRole();
+			clsAuthMemberRole.setId(clsAuthMemberSet.getId());
+			clsAuthMemberRole.setSystemCode(authSystenCode);
+			clsAuthMemberRole.setRoleCode(defaultRoleCode);
+			clsAuthMemberSet.addListAuthMemberRole(clsAuthMemberRole);
+			return clsAuthRoleMap;
+		}
+		return clsAuthRoleMap;
+	}
+//	DESC >> 시스템별 타입코드 유효 여부 확인
+	private boolean isAvailableSystemType(AuthMemberSet clsAuthMemberSet) throws Exception {
+		for(AuthMemberDevice clsAuthMemberDevice : clsAuthMemberSet.getListAuthMemberDevice()) {
+			List<String> listCode = new ArrayList<String>();
+			if(Misc.isEqualStringWithoutCase(clsAuthMemberDevice.getSystemCode(),CodeUtil.get("system-name-xnet").getStrCode()) == true) listCode = AuthMemberController.listAvailableXNetTypeList;
+			else if(Misc.isEqualStringWithoutCase(clsAuthMemberDevice.getSystemCode(),CodeUtil.get("system-name-avatar").getStrCode()) == true) listCode = AuthMemberController.listAvailableAvatarTypeList;
+			log.info("isAvailableSystemType : SystemType : {}, Avaiable : {}",clsAuthMemberDevice.getSystemTypeCode(),listCode);
+			if(listCode.contains(clsAuthMemberDevice.getSystemTypeCode()) == false) {
+				return false;
+			}
+		}
+		return true;
+	}
+//	DESC >> 회원가입
+	@RequestMapping(value = "/join",method = RequestMethod.POST) @ResponseBody
+	public String create(@RequestBody AuthMemberSet clsAuthMemberSet) {
+		PacketAuthToken clsPacketJoin = new PacketAuthToken();
+		try {
+//			DESC >> 전달받은 권한외 시스템별 권한을 매핑에 따라 설정한다.
+			AuthRoleMap clsAuthRoleMap = setAuthRoleMap(clsAuthMemberSet);
+//			DESC >> 아바타 및 XNET 의 시스템코드를 확인한다. 정의된 코드만 사용되도록 한다.
+			boolean isAvailableCode = this.isAvailableSystemType(clsAuthMemberSet);
+			if(isAvailableCode == false) {
+				clsPacketJoin.set(null,"unavaile system/sytem-type ");
+				clsPacketJoin.respone();
+			}
+//			DESC : 비밀번호를 SHA256 으로 변경해야 하므로, 비밀번호 알고리즘을 설정한다.
+			clsAuthMemberSet.setCryptographicAlgorithm(AuthConst._SHA_256_);
+			this.setCommonTrack(clsAuthMemberSet,clsAuthMemberSet.getId());
+			this.setCommonTrack(clsAuthMemberSet.getListAuthMemberDevice(),clsAuthMemberSet.getId());
+			this.setCommonTrack(clsAuthMemberSet.getListAuthMemberRole(),clsAuthMemberSet.getId());
+			clsPacketJoin.setService(clsAuthMemberService);
+			clsPacketJoin.set(AuthMemberSet.class,clsAuthMemberSet,RequestMethod.POST);
+		} catch(Exception ex) {
+//			ex.printStackTrace();
+//			clsPacketJoin.set(null,"cant register member information(" + ex.getMessage() + ")");
+			log.debug("## AuthMemberController ## create 오류 ");
+		}
+		return clsPacketJoin.respone();
+	}
+//	DESC >> 회원정보수정
+	@RequestMapping(value = "/member",method = RequestMethod.PUT) @ResponseBody
+	public String updateMember(@RequestBody AuthMemberSet clsAuthMemberSet) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			if(isAllUpdatable(clsAuthMemberSet.getId()) == true) {
+				AuthRoleMap clsAuthRoleMap = setAuthRoleMap(clsAuthMemberSet);
+				boolean isAvailableCode = this.isAvailableSystemType(clsAuthMemberSet);
+				if(isAvailableCode == false) {
+					clsPacketAuthToken.set(null,"unavaile system/sytem-type ");
+					clsPacketAuthToken.respone();
+				}
+				this.setCommonTrack(clsAuthMemberSet,clsAuthMemberSet.getId());
+				this.setCommonTrack(clsAuthMemberSet.getListAuthMemberDevice(),clsAuthMemberSet.getId());
+				this.setCommonTrack(clsAuthMemberSet.getListAuthMemberRole(),clsAuthMemberSet.getId());
+//				DESC : 비밀번호를 SHA256 으로 변경해야 하므로, 비밀번호 알고리즘을 설정한다.
+				clsAuthMemberSet.setCryptographicAlgorithm(AuthConst._SHA_256_);
+				clsPacketAuthToken.setService(clsAuthMemberService);
+				clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSet,RequestMethod.PUT);
+			} else {
+				throw new Exception("권한이부족하거나,만료된토큰입니다.");
+			}
+		} catch(Exception ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/search/id/{id}",method = RequestMethod.GET) @ResponseBody
+	public String checkMember(@PathVariable String id) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSetRepository.findOne(id),RequestMethod.GET);
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+		} catch (Exception e) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyId();
+	}
+	@RequestMapping(value = "/search/password/{id}/{mobile}/{name}",method = RequestMethod.GET) @ResponseBody
+	public String searchPasswordByName(@PathVariable String id, @PathVariable String mobile, @PathVariable String name) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSetRepository.findOneByIdAndMobileAndName(id,mobile,name),RequestMethod.GET);
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+		} catch (Exception e) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyPassword();
+	}
+	@RequestMapping(value = "/find/password/{id}/{mobile}/{name}",method = RequestMethod.GET) @ResponseBody
+	public String findPasswordByName(@PathVariable String id, @PathVariable String mobile, @PathVariable String name) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			name = (new AES256Util(AuthConst.strAES256Key)).aesEncode(name);
+//			clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSetRepository.findOneByIdAndMobileAndName(id,mobile,name),RequestMethod.GET);
+			clsPacketAuthToken.setResultMapData(clsAuthMemberSetRepository.findOneByIdAndMobileAndName(id,mobile,name));
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+		} catch (Exception e) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyPassword();
+	}
+
+	@RequestMapping(value = "/find/id/email/{id}/{email:.+}",method = RequestMethod.GET) @ResponseBody
+	public String checkMemberEmail(@PathVariable String id,@PathVariable String email) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSetRepository.findOneByIdAndEmail(id,email),RequestMethod.GET);
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+		} catch (Exception e) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyId();
+	}
+	@RequestMapping(value = "/find/mobile/{mobile}/{name}",method = RequestMethod.GET) @ResponseBody
+	public String searchMemberByName(@PathVariable String mobile, @PathVariable String name) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			AES256Util clsAES256Util = new AES256Util(AuthConst.strAES256Key);
+			if(Misc.isEmtyString(name) == false && Misc.isEmtyString(mobile) == false) {
+				name = clsAES256Util.aesEncode(name);
+				clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSetRepository.findOneByMobileAndName(mobile,name),RequestMethod.GET);
+				if(clsPacketAuthToken.isThere() == true)
+						clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+				else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+			} else {
+				clsPacketAuthToken.set(null,"항목이전달되지않았습니다.");
+			}
+		} catch (Exception e) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyId();
+	}
+	//  @RequestParam(required = false) String version
+	@RequestMapping(value = "/find/email",method = RequestMethod.GET) @ResponseBody
+	public String searchMemberEmail(@RequestParam String name, @RequestParam String genderCode, @RequestParam String birth) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			AES256Util clsAES256Util = new AES256Util(AuthConst.strAES256Key);
+			name = clsAES256Util.aesEncode(name);
+			clsPacketAuthToken.set(AuthMember.class,clsAuthMemberRepository.findByNameAndGenderCodeAndBirth(name, genderCode, DateUtil.toDate("yyyy-MM-dd", birth)),RequestMethod.GET);
+			log.info("find-email : name [{}]",name);
+			log.info("find-email : genderCode [{}]",genderCode);
+			log.info("find-email : birth [{}]",birth);
+			log.info("find-email : result [{}]",clsPacketAuthToken.isThere());
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyEmail();
+	}
+	@RequestMapping(value = "/find/email/{email}",method = RequestMethod.GET) @ResponseBody
+	public String searchEmail(@PathVariable String email) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			email = email.replaceAll("_,_",".");
+			clsPacketAuthToken.set(AuthMember.class,clsAuthMemberRepository.findByEmail(email),RequestMethod.GET);
+			log.info("find-email : email [{}]",email);
+			log.info("find-email : result [{}]",clsPacketAuthToken.isThere());
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyEmail();
+	}
+	@RequestMapping(value = "/find/id/{id}",method = RequestMethod.GET) @ResponseBody
+	public String searchID(@PathVariable String id) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			clsPacketAuthToken.set(AuthMemberSet.class,clsAuthMemberSetRepository.findById(id),RequestMethod.GET);
+			log.info("find-email : email [{}]",id);
+			log.info("find-email : result [{}]",clsPacketAuthToken.isThere());
+			if(clsPacketAuthToken.isThere() == true)
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+			else 	clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyId();
+	}
+
+//	DESc >> 최명호 : 비밀번호 찾기
+	@RequestMapping(value = "/find/password",method = RequestMethod.GET) @ResponseBody
+	public String searchMemberPassword(@RequestParam String name, @RequestParam String genderCode, @RequestParam String email) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			name = (new AES256Util(AuthConst.strAES256Key)).aesEncode(name);
+			AuthMember clsAuthMember = clsAuthMemberRepository.findByNameAndGenderCodeAndEmail(name, genderCode, email);
+			clsPacketAuthToken.set(AuthMember.class,clsAuthMember,RequestMethod.GET);
+			log.info("비밀번호검색 : name [{}], gender [{}], email [{}], result [{}], 알고리즘 [{}]",name,genderCode,email,clsPacketAuthToken.isThere(),clsAuthMember.getCryptographicAlgorithm());
+			if(clsPacketAuthToken.isThere() == true) {
+				clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,"");
+				log.info("비밀번호발송 : 핸드폰번호 [{}] ",clsAuthMember.getMobile());
+//				DESC >> 최명호 : 신규비밀번호를 생성한다.
+				String password = Misc.getRandomAlpha('s', 4) + Misc.getRandomInteger(4);
+				String digestedPassword = SHA256Util.encrypt(password);
+				log.info("임시 비밀번호 [{} -> {}] ",password,digestedPassword);
+//				DESC >> 최명호 : 생성된 신규 비밀번호를 업데이트 한다.
+				clsAuthMember.setPassword(digestedPassword);
+				clsAuthMember.setCryptographicAlgorithm(AuthConst._SHA_256_);
+				if(clsAuthMemberService.update(clsAuthMember) == false) {
+					clsPacketAuthToken.set(null,"자료를 업데이트 할 수 없습니다.");
+					return clsPacketAuthToken.respone();
+				}
+//				DESC >> 최명호 : 비밀번호를 발송한다.
+				SMSUtil.send(AuthConst.smsRequestUrl,clsAuthMember.getMobile(), "아바타 비밀번호는 [" + password + "] 입니다.");
+			} else {
+				clsPacketAuthToken.set(AuthConst.strPacketErrorCodeVals,"not-found");
+			}
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.responeWithOnlyPasswordAll();
+	}
+
+	@RequestMapping(value = "/find/list/{system}/{organization}/{department}",method = RequestMethod.GET) @ResponseBody
+	public String getMemberListWithoutAuth(Pageable pageRequest,@PathVariable String system,@PathVariable String organization,@PathVariable String department) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		Map<String,Object> mapParameter = new HashMap<String,Object>();
+		try {
+			clsPacketAuthToken.setService(clsAuthMemberService);
+			mapParameter.put("pageRequest", pageRequest);
+			mapParameter.put("system", system);
+			mapParameter.put("organization", organization);
+			mapParameter.put("department", department);
+			boolean result = clsPacketAuthToken.set(mapParameter.getClass(), mapParameter, RequestMethod.GET);
+			if (result == true) {
+				Page<AuthMemberSet> pageAuthMemberSet = (Page<AuthMemberSet>) clsPacketAuthToken.getResultMapData();
+				clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals, AuthConst.strPacketSuccessMessageVals);
+				clsPacketAuthToken.setResultMapData(
+						(PagingWrapper<AuthMemberSet>) this.setPagingWrapper((Page<AuthMemberSet>) pageAuthMemberSet));
+			}
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/member/doctor/{id}",method = RequestMethod.GET) @ResponseBody
+	public String getDoctor(@PathVariable String id) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			AuthMemberSet clsAuthMemberSet = AuthMemberSet.doctor().clsAuthMemberSet(clsAuthMemberSetRepository.findOne(id)).build();
+			if(Misc.isEqualString(CodeUtil.get("doctor").getStrCode(),clsAuthMemberSet.getTitleCode()) == false) {
+				throw new Exception("의사아님");
+			}
+			clsPacketAuthToken.set(clsAuthMemberSet.getClass(),clsAuthMemberSet,RequestMethod.GET);
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/member/{id}",method = RequestMethod.GET) @ResponseBody
+	public String getMember(@PathVariable String id) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			if(isAllSelectable() == true || isOnlyOwn(id) == true) {
+				AuthMemberSet clsAuthMemberSet = clsAuthMemberSetRepository.findOne(id);
+				clsPacketAuthToken.set(clsAuthMemberSet.getClass(),clsAuthMemberSet,RequestMethod.GET);
+			} else {
+				throw new Exception("권한이부족하거나,만료된토큰입니다.");
+			}
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/member/list/{system}/{organization}/{department}",method = RequestMethod.GET) @ResponseBody
+	public String getMemberList(Pageable pageRequest,@PathVariable String system,@PathVariable String organization,@PathVariable String department) {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		Map<String,Object> mapParameter = new HashMap<String,Object>();
+		try {
+			if(isAllSelectable() == true) {
+				clsPacketAuthToken.setService(clsAuthMemberService);
+				mapParameter.put("pageRequest",pageRequest);
+				mapParameter.put("system",system);
+				mapParameter.put("organization",organization);
+				mapParameter.put("department",department);
+				boolean result = clsPacketAuthToken.set(mapParameter.getClass(),mapParameter,RequestMethod.GET);
+				if(result == true) {
+					Page<AuthMemberSet> pageAuthMemberSet = (Page<AuthMemberSet>) clsPacketAuthToken.getResultMapData();
+					clsPacketAuthToken.set(AuthConst.strPacketSuccessCodeVals,AuthConst.strPacketSuccessMessageVals);
+					clsPacketAuthToken.setResultMapData((PagingWrapper<AuthMemberSet>)this.setPagingWrapper((Page<AuthMemberSet>)pageAuthMemberSet));
+				}
+			} else {
+				throw new Exception("권한이부족하거나,만료된토큰입니다.");
+			}
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/member/count/organizationCode",method = RequestMethod.GET) @ResponseBody
+	public String getCountMemberOrg() {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			clsPacketAuthToken.set(java.util.ArrayList.class,clsAuthMemberSetRepository.countByIdGroupByOrganization(),RequestMethod.GET);
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/member/count/organizationCode/departmentCode",method = RequestMethod.GET) @ResponseBody
+	public String getCountMemberDept() {
+		PacketAuthToken clsPacketAuthToken = new PacketAuthToken();
+		try {
+			clsPacketAuthToken.set(java.util.ArrayList.class,clsAuthMemberSetRepository.countByIdGroupByDepartmentCode(),RequestMethod.GET);
+		} catch (Exception Ex) {
+			clsPacketAuthToken.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthToken.respone();
+	}
+	@RequestMapping(value = "/member",method = RequestMethod.DELETE) @ResponseBody
+	public String delete(@RequestBody AuthMember clsAuthMember) {
+		PacketAuthToken clsPacketAuthDelete = new PacketAuthToken();
+		try {
+			clsPacketAuthDelete.setService(clsAuthMemberService);
+			clsPacketAuthDelete.set(AuthMember.class,clsAuthMember,RequestMethod.DELETE);
+		} catch(Exception ex) {
+			clsPacketAuthDelete.set(null,"처리할수없습니다.");
+		}
+		return clsPacketAuthDelete.respone();
+	}
+}

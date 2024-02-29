@@ -1,0 +1,184 @@
+/**********************************************************************************************************************
+ * File Name    : AuthMemberSet.java
+ * Function     :
+ * Author       : mh.choi
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : 참고할 내용
+				: https://stackoverflow.com/questions/4334970/hibernate-cannot-simultaneously-fetch-multiple-bags?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+				: -
+				: I think a newer version of hibernate (supporting JPA 2.0) should handle this.
+				: But otherwise you can work it around by annotating the collection fields with:
+				: @LazyCollection(LazyCollectionOption.FALSE)
+				: Remember to remove the fetchType attribute from the @*ToMany annotation.
+				: But note that in most cases a Set<Child> is more appropriate than List<Child>,
+				: so unless you really need a List - go for Set
+				: +
+				: the problem is that the JPA annotations are parsed not to allow more than 2 eagerly loaded collection.
+				: But the hibernate-specific annnotations allow it.
+ * ====================================================================================================================
+ * Modification Log
+ * ====================================================================================================================
+ * Ver  	Date        Author     	Modification
+ * ====================================================================================================================
+   1.0  	2018.04.06  mh.choi    	Create
+   1.1  	2019.05.01  최명호		doctor-builder 를 추가함.
+   1.1  	2019.06.28  최명호		transient 항목을 추가함(system-code,device-id)
+   1.4.004	2021.11.15	최명호 		cryptographicAlgorithm 에 따라 복호화 여부를 판단한다,
+   									AES256 이면 복호화후에 비교, SAH256 이라면, Digested 된 값과 비교한다,
+***********************************************************************************************************************/
+package org.snubi.auth.entity;
+
+import java.sql.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+import org.hibernate.annotations.Where;
+import org.snubi.auth.AuthConst;
+import org.snubi.lib.crypto.AES256Util;
+import org.snubi.lib.crypto.SHA256Util;
+import org.snubi.lib.misc.Misc;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@SuppressWarnings("serial")
+@Getter
+@Setter
+@Entity
+@ToString
+@Table(name = "tb_auth_member")
+public class AuthMemberSet extends CommonTrack implements CommonTrackInterface {
+	@Id
+	@Column(nullable = false, name = "id")
+	private String id;
+
+	@Column(nullable = false, name = "organization_code")
+	private String organizationCode;
+
+	@Column(nullable = false, name = "department_code")
+	private String departmentCode;
+
+	@Column(nullable = true, name = "title_code")
+	private String titleCode;
+
+	@Column(nullable = true, name = "gender_code")
+	private String genderCode;
+
+	@Column(nullable = false, name = "membership_code")
+	private String membershipCode;
+
+	@Column(nullable = false, name = "password")
+	private String password;
+
+	@Column(nullable = false, name = "cryptographic_algorithm")
+	private String cryptographicAlgorithm;
+
+	@Column(nullable = false, name = "name")
+	private String name;
+
+	@Column(nullable = false, name = "email")
+	private String email;
+
+	@Column(nullable = false, name = "birth", columnDefinition="datetime")
+	@JsonFormat(pattern="yyyy-MM-dd")
+	private Date birth;
+
+	@Column(nullable = true, name = "phone")
+	private String phone;
+
+	@Column(nullable = true, name = "mobile")
+	private String mobile;
+
+	@LazyCollection(LazyCollectionOption.FALSE)
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "id")
+	@Where(clause = "valid = 'active'")
+	private List<AuthMemberRole> listAuthMemberRole;
+
+	@LazyCollection(LazyCollectionOption.FALSE)
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "id")
+	@Where(clause = "valid = 'active'")
+	private List<AuthMemberDevice> listAuthMemberDevice;
+
+	@Transient	long count			;
+//	DESC >> 로그인시 전달되는 항목을 처리하기 위하여
+	@Transient	String systemCode		;
+	@Transient	String deviceId			;
+	@Transient	String osCode			;
+	@Transient	String systemTypeCode	;
+	@Transient	String systemTypeVersion;
+
+	public void addListAuthMemberRole(AuthMemberRole clsAuthMemberRole) {
+		listAuthMemberRole.add(clsAuthMemberRole);
+	}
+	public AuthMemberSet() {}
+	public AuthMemberSet(long count, String organizationCode) {
+		this.count = count;
+		this.organizationCode = organizationCode;
+	}
+	public AuthMemberSet(long count, String organizationCode, String departmentCode) {
+		this.count = count;
+		this.organizationCode = organizationCode;
+		this.departmentCode = departmentCode;
+	}
+	public AuthMemberSet encode() {
+		try {
+			AES256Util clsAES256Util = new AES256Util(AuthConst.strAES256Key);
+			if(Misc.isEmtyString(this.name) == false) {
+				this.name = clsAES256Util.aesEncode(this.name);
+			}
+			if(Misc.isEmtyString(this.password) == false) {
+				this.password = this.isDigested() == false ? clsAES256Util.aesEncode(this.password) : SHA256Util.encrypt(this.password);
+			}
+		} catch(Exception Ex) {
+			Ex.printStackTrace();
+		}
+		return this;
+	}
+	public AuthMemberSet decode() {
+		try {
+			AES256Util clsAES256Util = new AES256Util(AuthConst.strAES256Key);
+			if(Misc.isEmtyString(this.name) == false) {
+				this.name = clsAES256Util.aesDecode(this.name);
+			}
+			if(Misc.isEmtyString(this.password) == false) {
+				this.password = this.isDigested() == false ? clsAES256Util.aesEncode(this.password) : this.password;
+			}
+		} catch(Exception Ex) {
+			Ex.printStackTrace();
+		}
+		return this;
+	}
+	@Builder(builderMethodName = "doctor")
+	public AuthMemberSet(AuthMemberSet clsAuthMemberSet) {
+		this.id					= clsAuthMemberSet.id				;
+		this.organizationCode	= clsAuthMemberSet.organizationCode	;
+		this.departmentCode	    = clsAuthMemberSet.departmentCode	;
+		this.titleCode	        = clsAuthMemberSet.titleCode	    ;
+		this.name				= clsAuthMemberSet.name				;
+		this.titleCode			= clsAuthMemberSet.titleCode		;
+	}
+
+//	DESC >> 최명호 : 암호화가 AES 로 되어 있다면, false, SHA-256 으로 되어 있다면 true
+//	TODO >> 최명호 : 코드에 반영해야 한다.
+	public boolean isDigested() {
+		return this.cryptographicAlgorithm.toUpperCase().charAt(0) == AuthConst._AES_256_.charAt(0) ? false : true;
+	}
+}

@@ -1,0 +1,108 @@
+/****************************************************************************************
+ * File Name    : LoggerAspect.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  : AOP 를 이용하여 Logger 를 작성한다.
+ * 				: @Around 조건이 SP버전에 따라 다르게 동작함.
+ * Modification Log
+ * ======================================================================================
+ * Ver  	Date        Author     	Modification
+ * ======================================================================================
+   1.4.006  2021.12.16	최명호		파일생성
+****************************************************************************************/
+package org.snubi.auth.logging;
+
+import java.util.Enumeration;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.snubi.auth.AuthConst;
+import org.snubi.lib.jwt.JTWClaimsUtil;
+import org.snubi.lib.jwt.JWTClaims;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Component
+@Aspect
+@Slf4j
+public class LoggerAspect {
+
+	@Autowired(required = true)
+	private HttpServletRequest clsHttpServletRequest;
+
+    @Around("within(org.snubi.auth.admin.controller.*)")
+    public Object logging(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+    //  DESC >> 최명호 : AdminController
+    	log.info("## logging ## start ");
+    	String strHTTPHeader = clsHttpServletRequest.getHeader("authorization").replace(AuthConst.strTokenPrefix, "");
+		String strKey = AuthConst.strSecrete;
+		JWTClaims clsJWTClaims = (new JTWClaimsUtil()).getClaims(strHTTPHeader,strKey);
+		log.info("## logging ## id [{}] ",clsJWTClaims.getId());
+    	Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+    	while(headerNames.hasMoreElements()) {
+    		String headerName = (String)headerNames.nextElement();
+    		log.info("## header ## headerName [{}] : [{}] ",headerName,clsHttpServletRequest.getHeader(headerName));
+    	}
+    	Enumeration<String> params = clsHttpServletRequest.getParameterNames();
+    	while(params.hasMoreElements()){
+    		String paramName = params.nextElement();
+    		log.info("## header ## parameter [{}] : [{}] ",paramName,clsHttpServletRequest.getParameter(paramName));
+    	}
+    	log.info("## logging ## end ");
+    	Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+//  DESC >> 최명호 : memberController
+    @Around("within(org.snubi.auth.member.controller.*)")
+    public Object logging2(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+
+    	log.info("## logging ## start ");
+//    	String strHTTPHeader = clsHttpServletRequest.getHeader("authorization").replace(AuthConst.strTokenPrefix, "");
+//		String strKey = AuthConst.strSecrete;
+//		JWTClaims clsJWTClaims = (new JTWClaimsUtil()).getClaims(strHTTPHeader,strKey);
+//		log.info("## logging ## id [{}] ",clsJWTClaims.getId());
+    	Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+    	while(headerNames.hasMoreElements()) {
+    		String headerName = (String)headerNames.nextElement();
+    		log.info("## header ## headerName [{}] : [{}] ",headerName,clsHttpServletRequest.getHeader(headerName));
+    	}
+    	Enumeration<String> params = clsHttpServletRequest.getParameterNames();
+    	while(params.hasMoreElements()){
+    		String paramName = params.nextElement();
+    		log.info("## header ## parameter [{}] : [{}] ",paramName,clsHttpServletRequest.getParameter(paramName));
+    	}
+    	log.info("## logging ## end ");
+    	Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+//  DESC >> 최명호 : 로그인
+//    @Around("execution(* org.snubi.auth.security.service.CustomUserDetailsServiceImplement.loadUserByUsername(..))")
+//    public Object loggerForLogin(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+//
+////    	HttpMiscUtil clsHttpUtil = new HttpMiscUtil();
+////    	String uri = clsHttpServletRequest.getRequestURI();
+////    	String ip = clsHttpServletRequest.getRemoteAddr();
+////    	Map<String,String> mapHeader = clsHttpUtil.parseParamters(clsHttpServletRequest);
+////    	Map<String,String> mapParameter = clsHttpUtil.parseHeader(clsHttpServletRequest);
+////
+////    	log.info(uri);
+////    	log.info(ip);
+////    	log.info(mapHeader.toString());
+////    	log.info(mapParameter.toString());
+//
+//    	return null;
+//    }
+
+
+
+
+
+}

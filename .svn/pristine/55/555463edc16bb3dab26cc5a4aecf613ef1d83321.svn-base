@@ -1,0 +1,114 @@
+/****************************************************************************************
+ * File Name    : LoggerAspect.java
+ * Function     :
+ * Author       : 최명호
+ * Tester       :
+ * Page         :
+ * Target       :
+ * Description  :
+ * Modification Log
+ * ======================================================================================
+ * Ver  	Date        Author     	Modification
+ * ======================================================================================
+   1.4.006  2021.12.16	최명호		파일생성
+****************************************************************************************/
+package org.snubi.auth.logging;
+
+import java.util.Enumeration;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.snubi.auth.AuthConst;
+import org.snubi.auth.security.filter.AuthJWTAuthenticationFilter;
+import org.snubi.auth.security.filter.AuthJWTAuthorizationFilter;
+import org.snubi.lib.jwt.JTWClaimsUtil;
+import org.snubi.lib.jwt.JWTClaims;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Component
+@Aspect
+@Slf4j
+public class LoggerAspect {
+
+	@Autowired(required = true)
+	private HttpServletRequest clsHttpServletRequest;
+
+    @Around("within(org.snubi.auth.admin.controller.*)")
+    public Object logging(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+    //  DESC >> 최명호 : AdminController
+    	log.info("## logging ## start ");
+    	String strHTTPHeader = clsHttpServletRequest.getHeader("authorization").replace(AuthConst.strTokenPrefix, "");
+		String strKey = AuthConst.strSecrete;
+		JWTClaims clsJWTClaims = (new JTWClaimsUtil()).getClaims(strHTTPHeader,strKey);
+		log.info("## logging ## id [{}] ",clsJWTClaims.getId());
+    	Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+    	while(headerNames.hasMoreElements()) {
+    		String headerName = (String)headerNames.nextElement();
+    		log.info("## header ## headerName [{}] : [{}] ",headerName,clsHttpServletRequest.getHeader(headerName));
+    	}
+    	Enumeration<String> params = clsHttpServletRequest.getParameterNames();
+    	while(params.hasMoreElements()){
+    		String paramName = params.nextElement();
+    		log.info("## header ## parameter [{}] : [{}] ",paramName,clsHttpServletRequest.getParameter(paramName));
+    	}
+    	log.info("## logging ## end ");
+    	Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+//  DESC >> 최명호 : memberController
+    @Around("within(org.snubi.auth.member.controller.*)")
+    public Object logging2(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+
+    	log.info("## logging ## start ");
+//    	String strHTTPHeader = clsHttpServletRequest.getHeader("authorization").replace(AuthConst.strTokenPrefix, "");
+//		String strKey = AuthConst.strSecrete;
+//		JWTClaims clsJWTClaims = (new JTWClaimsUtil()).getClaims(strHTTPHeader,strKey);
+//		log.info("## logging ## id [{}] ",clsJWTClaims.getId());
+    	Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+    	while(headerNames.hasMoreElements()) {
+    		String headerName = (String)headerNames.nextElement();
+    		log.info("## header ## headerName [{}] : [{}] ",headerName,clsHttpServletRequest.getHeader(headerName));
+    	}
+    	Enumeration<String> params = clsHttpServletRequest.getParameterNames();
+    	while(params.hasMoreElements()){
+    		String paramName = params.nextElement();
+    		log.info("## header ## parameter [{}] : [{}] ",paramName,clsHttpServletRequest.getParameter(paramName));
+    	}
+    	log.info("## logging ## end ");
+    	Object result = clsProceedingJoinPoint.proceed();
+         return result;
+    }
+
+//  TODO >> 최명호 : 로그인
+    @Around("execution(* org.snubi.auth.security.service.CustomUserDetailsServiceImplement.loadUserByUsername(..))")
+    public Object doSomethingBefore(ProceedingJoinPoint clsProceedingJoinPoint) throws Throwable {
+    	log.info("## doSomethingBefore ## ---------------------------------------------------" + clsHttpServletRequest.getRequestURI());
+    	Enumeration<String> headerNames = clsHttpServletRequest.getHeaderNames();
+    	while(headerNames.hasMoreElements()) {
+    		String headerName = (String)headerNames.nextElement();
+    		log.info("## header ## headerName [{}] : [{}] ",headerName,clsHttpServletRequest.getHeader(headerName));
+    	}
+    	Enumeration<String> params = clsHttpServletRequest.getParameterNames();
+    	while(params.hasMoreElements()){
+    		String paramName = params.nextElement();
+    		log.info("## header ## parameter [{}] : [{}] ",paramName,clsHttpServletRequest.getParameter(paramName));
+    	}
+    	log.info("## logging ## end ");
+    	log.info("## doSomethingBefore ## ---------------------------------------------------");
+    	Object result = clsProceedingJoinPoint.proceed();
+        return result;
+    }
+
+
+
+}

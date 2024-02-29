@@ -1,0 +1,82 @@
+///**************************************************************************************** 
+// * File Name    : StatBatchSchedulerConfig.java
+// * Function     : 
+// * Author       : mh.choi
+// * Tester       : 
+// * Page         : 
+// * Target       : 
+// * Description  : 
+// * Modification Log
+// * ====================================================================================== 
+// * Ver  Date        Author     	Modification
+// * ======================================================================================
+//   1.0  2019.04.30	최명호		파일생성
+//****************************************************************************************/
+//package org.snubi.auth.stat;
+//
+//import java.util.Date;
+//
+//import org.springframework.batch.core.Job;
+//import org.springframework.batch.core.JobExecution;
+//import org.springframework.batch.core.JobParameters;
+//import org.springframework.batch.core.JobParametersBuilder;
+//import org.springframework.batch.core.Step;
+//import org.springframework.batch.core.StepContribution;
+//import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
+//import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
+//import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
+//import org.springframework.batch.core.launch.support.RunIdIncrementer;
+//import org.springframework.batch.core.launch.support.SimpleJobLauncher;
+//import org.springframework.batch.core.scope.context.ChunkContext;
+//import org.springframework.batch.core.step.tasklet.Tasklet;
+//import org.springframework.batch.repeat.RepeatStatus;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.context.annotation.Configuration;
+//import org.springframework.scheduling.annotation.EnableScheduling;
+//import org.springframework.scheduling.annotation.Scheduled;
+//
+//import lombok.extern.slf4j.Slf4j;
+//
+//@Configuration
+//@EnableBatchProcessing
+//@EnableScheduling
+//@Slf4j
+//public class StatBatchSchedulerConfig {
+//
+//	@Autowired
+//	public JobBuilderFactory jobBuilderFactory;
+//
+//	@Autowired
+//	public StepBuilderFactory stepBuilderFactory;
+//	
+//    @Autowired
+//    private SimpleJobLauncher jobLauncher;
+//    
+//    //초 분 시 일 월 주(년)
+//    @Scheduled(cron = "0 * *( * * ?")
+//    public void perform() throws Exception {
+//        log.info("@@ Job Started at :" + new Date());
+//        JobParameters param = new JobParametersBuilder().addString("JobID",String.valueOf(System.currentTimeMillis())).toJobParameters();
+//        JobExecution execution = jobLauncher.run(analysisJob(), param);
+//        log.info("@@ Job finished with status :" + execution.getStatus());
+//    }
+//	private Job analysisJob() {
+//		return jobBuilderFactory.get("[ANALYSIS JOB]")
+//				.incrementer(new RunIdIncrementer())
+//				.start(analysisStep())
+//				.build();
+//	}
+//	private Step analysisStep() {
+//		return stepBuilderFactory.get("[ANALYSIS]")
+//				.tasklet(new Tester())
+//				.build();
+//	}
+//	public class Tester implements Tasklet {
+//		@Override
+//		public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+//			log.info("@@ Tester @@ ");
+//			return null;
+//		}
+//		
+//	}
+//}

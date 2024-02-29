@@ -1,0 +1,2 @@
+spring.profiles.active=local.mysql
+#spring.profiles.active=oracle
